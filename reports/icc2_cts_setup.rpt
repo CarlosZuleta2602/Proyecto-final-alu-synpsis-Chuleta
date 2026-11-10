@@ -1,0 +1,1911 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 10
+        -report_by design
+Design : alu_plus_sync
+Version: Y-2026.03-SP2
+Date   : Mon Nov  9 13:04:00 2026
+****************************************
+
+  Startpoint: B_reg_reg_13_ (rising edge-triggered flip-flop clocked by core_clock)
+  Endpoint: Z_reg (rising edge-triggered flip-flop clocked by core_clock)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: core_clock
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 1.08      1.08
+
+  B_reg_reg_13_/CK (DFFRBQX2AS7)                   0.00      1.08 r
+  B_reg_reg_13_/Q (DFFRBQX2AS7)                    0.49      1.57 f
+  HFSINV_1202_13/O (CLKINVX2AS7)                   0.22      1.79 r
+  HFSBUF_115_11/O (BUFX3AS7)                       0.30      2.09 r
+  U1205/O (NAND2X2AS7)                             0.11      2.20 f
+  U1206/O (NOR2X2AS7)                              0.34      2.54 r
+  U1207/O (NAND2X2AS7)                             0.13      2.67 f
+  U300/O (NOR2X2AS7)                               0.32      2.99 r
+  U1208/O (NAND2X2AS7)                             0.15      3.14 f
+  ctmTdsLR_2_305/O (CLKINVX2AS7)                   0.12      3.26 r
+  ctmTdsLR_1_304/O (NAND3B1X2AS7)                  0.16      3.42 f
+  U302/O (NOR2X2AS7)                               0.27      3.69 r
+  U1210/O (NAND2X2AS7)                             0.13      3.82 f
+  U1211/O (NOR2X2AS7)                              0.23      4.05 r
+  U1212/O (NAND2X2AS7)                             0.16      4.21 f
+  ctmTdsLR_3_303/O (INVX1AS7)                      0.16      4.37 r
+  ctmTdsLR_1_301/O (NAND2B1X2AS7)                  0.13      4.49 f
+  U1216/O (OAI12X2AS7)                             0.23      4.72 r
+  U1220/O (OAI12X1AS7)                             0.16      4.89 f
+  U1225/O (OAI112X2AS7)                            0.26      5.15 r
+  ctmTdsLR_1_819/O (OAI12B2X4AS7)                  0.15      5.30 f
+  U1232/O (OAI12X1AS7)                             0.24      5.54 r
+  U1238/O (AOI12X1AS7)                             0.21      5.75 f
+  U1239/O (NAND2X1AS7)                             0.24      5.99 r
+  U1240/O (NAND2X1AS7)                             0.14      6.13 f
+  U1243/O (NAND2X1AS7)                             0.15      6.28 r
+  U1253/O (NAND4X2AS7)                             0.26      6.54 f
+  U1259/O (NOR2X2AS7)                              0.25      6.78 r
+  U1260/O (XOR2X1AS7)                              0.38      7.17 f
+  ctmTdsLR_1_686/O (OAI12B2X1AS7)                  0.12      7.28 r
+  ctmTdsLR_1_778/O (OAI12B2X1AS7)                  0.17      7.46 f
+  U1267/O (NAND2X1AS7)                             0.13      7.58 r
+  U1268/O (NAND2B1X1AS7)                           0.11      7.70 f
+  ctmTdsLR_1_300/O (OAI12B2X2AS7)                  0.21      7.91 r
+  U287/O (OAI12X4AS7)                              0.15      8.06 f
+  U1284/O (INVX2AS7)                               0.26      8.32 r
+  U1285/O (NAND2X4AS7)                             0.11      8.43 f
+  U1288/O (NAND3X1AS7)                             0.21      8.64 r
+  U1295/O (AOI12X2AS7)                             0.14      8.78 f
+  U1299/O (OAI12X2AS7)                             0.19      8.96 r
+  U1307/O (NAND2X2AS7)                             0.12      9.08 f
+  ctmTdsLR_1_687/O (OAI22B2X2AS7)                  0.27      9.35 r
+  ctmTdsLR_2_851/O (NAND2B1X1AS7)                  0.11      9.46 f
+  ctmTdsLR_3_852/O (OAI22B2X1AS7)                  0.25      9.71 f
+  ctmTdsLR_1_933/O (NAND2B1X1AS7)                  0.26      9.97 f
+  U310/O (AOI12X4AS7)                              0.34     10.31 r
+  U1335/O (NAND2X1AS7)                             0.14     10.45 f
+  U1336/O (XOR2X1AS7)                              0.33     10.78 r
+  U1337/O (NOR2X1AS7)                              0.10     10.87 f
+  U1348/O (OAI12X1AS7)                             0.39     11.27 r
+  U1355/O (AOI12X2AS7)                             0.17     11.43 f
+  U1363/O (OAI12X2AS7)                             0.21     11.64 r
+  U1409/CO (FAX1AS7)                               0.34     11.98 r
+  U1368/CO (FAX1AS7)                               0.32     12.30 r
+  U307/O (NAND2X2AS7)                              0.35     12.65 f
+  U1370/O (OAI12X1AS7)                             0.35     13.00 r
+  U1371/O (OAI12X1AS7)                             0.20     13.20 f
+  U1372/O (INVX1AS7)                               0.19     13.39 r
+  U1376/O (OAI12X2AS7)                             0.11     13.51 f
+  U1385/O (AOI12X2AS7)                             0.26     13.76 r
+  U1393/O (OAI12X2AS7)                             0.13     13.89 f
+  ctmTdsLR_1_696/O (OAI12B2X1AS7)                  0.24     14.13 f
+  U1457/CO (FAX1AS7)                               0.43     14.55 f
+  U1461/CO (FAX1AS7)                               0.45     15.00 f
+  U1414/CO (FAX1AS7)                               0.41     15.41 f
+  U1415/O (NAND2X2AS7)                             0.39     15.80 r
+  U1416/O (OAI12X1AS7)                             0.09     15.89 f
+  U1417/O (OAI12X1AS7)                             0.20     16.09 r
+  U1418/O (INVX1AS7)                               0.10     16.19 f
+  U1422/O (OAI12X1AS7)                             0.35     16.55 r
+  U1431/O (AOI12X2AS7)                             0.15     16.70 f
+  U1439/O (OAI12X2AS7)                             0.24     16.94 r
+  ctmTdsLR_1_700/O (OAI12B2X1AS7)                  0.26     17.20 r
+  U1508/CO (FAX1AS7)                               0.33     17.52 r
+  U1517/CO (FAX1AS7)                               0.34     17.86 r
+  U1521/CO (FAX1AS7)                               0.34     18.20 r
+  U1465/CO (FAX1AS7)                               0.37     18.58 r
+  U306/O (NAND2X4AS7)                              0.25     18.83 f
+  U1467/O (OAI12X1AS7)                             0.29     19.12 r
+  U1468/O (OAI12X1AS7)                             0.21     19.33 f
+  U1469/O (INVX1AS7)                               0.17     19.50 r
+  U1473/O (OAI12X1AS7)                             0.17     19.66 f
+  U1482/O (AOI12X2AS7)                             0.27     19.93 r
+  U1490/O (OAI12X2AS7)                             0.14     20.07 f
+  ctmTdsLR_1_791/O (OAI12B2X1AS7)                  0.24     20.31 f
+  U1569/CO (FAX1AS7)                               0.47     20.77 f
+  ctmTdsLR_1_298/O (NAND2X1AS7)                    0.15     20.92 r
+  ctmTdsLR_2_299/O (NAND2B1X1AS7)                  0.13     21.05 f
+  U1578/CO (FAX1AS7)                               0.41     21.46 f
+  U1582/CO (FAX1AS7)                               0.43     21.89 f
+  U1585/CO (FAX1AS7)                               0.41     22.30 f
+  U1525/O (NAND2X2AS7)                             0.45     22.75 r
+  U1536/O (NOR2X1AS7)                              0.05     22.80 f
+  U1537/O (AOI12X1AS7)                             0.39     23.20 r
+  U1539/O (NAND2X1AS7)                             0.17     23.36 f
+  U1540/O (INVX1AS7)                               0.15     23.51 r
+  U1541/O (AOI12X2AS7)                             0.10     23.62 f
+  U1549/O (OAI12X1AS7)                             0.39     24.01 r
+  U1559/O (AOI12X2AS7)                             0.15     24.16 f
+  U1567/O (OAI12X2AS7)                             0.21     24.37 r
+  U1637/CO (FAX1AS7)                               0.33     24.69 r
+  U1641/CO (FAX1AS7)                               0.32     25.02 r
+  U1645/CO (FAX1AS7)                               0.32     25.34 r
+  U1649/CO (FAX1AS7)                               0.33     25.67 r
+  U1652/CO (FAX1AS7)                               0.38     26.05 r
+  U305/O (NAND2X4AS7)                              0.27     26.32 f
+  U1588/O (OAI12X1AS7)                             0.29     26.61 r
+  U1589/O (OAI12X1AS7)                             0.21     26.82 f
+  U1590/O (CLKINVX2AS7)                            0.12     26.94 r
+  U1594/O (OAI12X1AS7)                             0.17     27.11 f
+  U1603/O (AOI12X2AS7)                             0.30     27.41 r
+  U1611/O (OAI12X2AS7)                             0.15     27.56 f
+  U1621/O (AOI12X2AS7)                             0.25     27.80 r
+  U1629/O (OAI12X2AS7)                             0.11     27.92 f
+  U1702/CO (FAX1AS7)                               0.43     28.35 f
+  U1706/CO (FAX1AS7)                               0.43     28.78 f
+  U1710/CO (FAX1AS7)                               0.43     29.21 f
+  U1714/CO (FAX1AS7)                               0.44     29.65 f
+  U1718/CO (FAX1AS7)                               0.43     30.09 f
+  U1721/CO (FAX1AS7)                               0.45     30.54 f
+  U304/O (NAND2X4AS7)                              0.31     30.85 r
+  U1655/O (OAI12X1AS7)                             0.21     31.06 f
+  U1656/O (INVX1AS7)                               0.20     31.27 r
+  U1659/O (OAI12X2AS7)                             0.12     31.39 f
+  U1668/O (AOI12X2AS7)                             0.25     31.64 r
+  U1676/O (OAI12X1AS7)                             0.20     31.84 f
+  U1686/O (AOI12X2AS7)                             0.25     32.09 r
+  U1694/O (OAI12X1AS7)                             0.14     32.23 f
+  U1778/CO (FAX1AS7)                               0.43     32.66 f
+  U1782/CO (FAX1AS7)                               0.43     33.09 f
+  U1786/CO (FAX1AS7)                               0.43     33.52 f
+  U1790/CO (FAX1AS7)                               0.43     33.95 f
+  U1794/CO (FAX1AS7)                               0.44     34.39 f
+  U1798/CO (FAX1AS7)                               0.44     34.83 f
+  U1801/CO (FAX1AS7)                               0.45     35.28 f
+  U1724/O (NAND2X4AS7)                             0.33     35.61 r
+  U1726/O (OAI12X1AS7)                             0.24     35.85 f
+  U1727/O (INVX1AS7)                               0.15     36.00 r
+  U1730/O (OAI12X1AS7)                             0.19     36.19 f
+  U1739/O (AOI12X1AS7)                             0.35     36.54 r
+  U1747/O (OAI12X1AS7)                             0.20     36.74 f
+  U1757/O (AOI12X1AS7)                             0.33     37.07 r
+  U1765/O (OAI12X1AS7)                             0.15     37.23 f
+  ctmTdsLR_1_884/O (OAI12B2X1AS7)                  0.24     37.47 f
+  U1852/CO (FAX1AS7)                               0.43     37.90 f
+  U1854/CO (FAX1AS7)                               0.42     38.32 f
+  U1856/CO (FAX1AS7)                               0.42     38.74 f
+  U1858/CO (FAX1AS7)                               0.45     39.19 f
+  U1860/CO (FAX1AS7)                               0.43     39.63 f
+  U1862/CO (FAX1AS7)                               0.44     40.07 f
+  U1864/CO (FAX1AS7)                               0.46     40.52 f
+  U313/O (NAND2X4AS7)                              0.35     40.88 r
+  U1813/O (MUX2X1AS7)                              0.42     41.30 f
+  U1815/O (NAND2X1AS7)                             0.16     41.46 r
+  U1818/O (INVX1AS7)                               0.09     41.55 f
+  U1819/O (AOI12X2AS7)                             0.32     41.87 r
+  U1825/O (OAI12X1AS7)                             0.17     42.04 f
+  U1833/O (AOI12X1AS7)                             0.34     42.38 r
+  U1839/O (OAI12X1AS7)                             0.16     42.54 f
+  ctmTdsLR_1_518/O (OAI12B2X1AS7)                  0.24     42.78 f
+  U1913/CO (FAX1AS7)                               0.43     43.22 f
+  U1918/CO (FAX1AS7)                               0.43     43.64 f
+  U1923/CO (FAX1AS7)                               0.43     44.07 f
+  U1928/CO (FAX1AS7)                               0.43     44.49 f
+  U1933/CO (FAX1AS7)                               0.44     44.94 f
+  U1938/CO (FAX1AS7)                               0.44     45.38 f
+  U1944/CO (FAX1AS7)                               0.44     45.82 f
+  U1947/CO (FAX1AS7)                               0.41     46.23 f
+  U1866/O (NAND2X2AS7)                             0.60     46.83 r
+  U1887/O (MUX2X1AS7)                              0.50     47.33 r
+  U1888/O (NOR2X1AS7)                              0.08     47.41 f
+  ctmTdsLR_1_580/O (CLKINVX1AS7)                   0.12     47.53 r
+  ctmTdsLR_2_581/O (OAI112X1AS7)                   0.14     47.67 f
+  U1906/O (OAI12X1AS7)                             0.26     47.94 r
+  ctmTdsLR_1_835/O (OAI222X1AS7)                   0.24     48.18 f
+  ctmTdsLR_2_836/O (OAI12B2X1AS7)                  0.16     48.34 r
+  U1922/O (AOI12X1AS7)                             0.12     48.46 f
+  U1927/O (OAI12X1AS7)                             0.29     48.75 r
+  ctmTdsLR_1_945/O (OAI222X1AS7)                   0.25     49.01 f
+  U1937/O (OAI12X1AS7)                             0.32     49.33 r
+  ctmTdsLR_1_474/O (OAI12X1AS7)                    0.13     49.46 f
+  ctmTdsLR_2_475/O (OAI12B2X1AS7)                  0.17     49.63 r
+  U1946/CO (FAX1AS7)                               0.35     49.98 r
+  U1949/CO (FAX1AS7)                               0.32     50.31 r
+  U1950/O (CLKINVX2AS7)                            0.10     50.41 f
+  U2887/O (OAI112X1AS7)                            0.35     50.76 r
+  ctmTdsLR_1_887/O (NOR2X1AS7)                     0.07     50.82 f
+  Z_reg/D (DFFSBQX1AS7)                            0.00     50.82 f
+  data arrival time                                         50.82
+
+  clock core_clock (rise edge)                    50.00     50.00
+  clock network delay (propagated)                 1.28     51.28
+  Z_reg/CK (DFFSBQX1AS7)                           0.00     51.28 r
+  library setup time                              -0.48     50.81
+  data required time                                        50.81
+  ------------------------------------------------------------------------
+  data required time                                        50.81
+  data arrival time                                        -50.82
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.02
+
+
+
+  Startpoint: B_reg_reg_13_ (rising edge-triggered flip-flop clocked by core_clock)
+  Endpoint: Result_reg_0_ (rising edge-triggered flip-flop clocked by core_clock)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: core_clock
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 1.08      1.08
+
+  B_reg_reg_13_/CK (DFFRBQX2AS7)                   0.00      1.08 r
+  B_reg_reg_13_/Q (DFFRBQX2AS7)                    0.49      1.57 f
+  HFSINV_1202_13/O (CLKINVX2AS7)                   0.22      1.79 r
+  HFSBUF_115_11/O (BUFX3AS7)                       0.30      2.09 r
+  U1205/O (NAND2X2AS7)                             0.11      2.20 f
+  U1206/O (NOR2X2AS7)                              0.34      2.54 r
+  U1207/O (NAND2X2AS7)                             0.13      2.67 f
+  U300/O (NOR2X2AS7)                               0.32      2.99 r
+  U1208/O (NAND2X2AS7)                             0.15      3.14 f
+  ctmTdsLR_2_305/O (CLKINVX2AS7)                   0.12      3.26 r
+  ctmTdsLR_1_304/O (NAND3B1X2AS7)                  0.16      3.42 f
+  U302/O (NOR2X2AS7)                               0.27      3.69 r
+  U1210/O (NAND2X2AS7)                             0.13      3.82 f
+  U1211/O (NOR2X2AS7)                              0.23      4.05 r
+  U1212/O (NAND2X2AS7)                             0.16      4.21 f
+  ctmTdsLR_3_303/O (INVX1AS7)                      0.16      4.37 r
+  ctmTdsLR_1_301/O (NAND2B1X2AS7)                  0.13      4.49 f
+  U1216/O (OAI12X2AS7)                             0.23      4.72 r
+  U1220/O (OAI12X1AS7)                             0.16      4.89 f
+  U1225/O (OAI112X2AS7)                            0.26      5.15 r
+  ctmTdsLR_1_819/O (OAI12B2X4AS7)                  0.15      5.30 f
+  U1232/O (OAI12X1AS7)                             0.24      5.54 r
+  U1238/O (AOI12X1AS7)                             0.21      5.75 f
+  U1239/O (NAND2X1AS7)                             0.24      5.99 r
+  U1240/O (NAND2X1AS7)                             0.14      6.13 f
+  U1243/O (NAND2X1AS7)                             0.15      6.28 r
+  U1253/O (NAND4X2AS7)                             0.26      6.54 f
+  U1259/O (NOR2X2AS7)                              0.25      6.78 r
+  U1260/O (XOR2X1AS7)                              0.38      7.17 f
+  ctmTdsLR_1_686/O (OAI12B2X1AS7)                  0.12      7.28 r
+  ctmTdsLR_1_778/O (OAI12B2X1AS7)                  0.17      7.46 f
+  U1267/O (NAND2X1AS7)                             0.13      7.58 r
+  U1268/O (NAND2B1X1AS7)                           0.11      7.70 f
+  ctmTdsLR_1_300/O (OAI12B2X2AS7)                  0.21      7.91 r
+  U287/O (OAI12X4AS7)                              0.15      8.06 f
+  U1284/O (INVX2AS7)                               0.26      8.32 r
+  U1285/O (NAND2X4AS7)                             0.11      8.43 f
+  U1288/O (NAND3X1AS7)                             0.21      8.64 r
+  U1295/O (AOI12X2AS7)                             0.14      8.78 f
+  U1299/O (OAI12X2AS7)                             0.19      8.96 r
+  U1307/O (NAND2X2AS7)                             0.12      9.08 f
+  ctmTdsLR_1_687/O (OAI22B2X2AS7)                  0.27      9.35 r
+  ctmTdsLR_2_851/O (NAND2B1X1AS7)                  0.11      9.46 f
+  ctmTdsLR_3_852/O (OAI22B2X1AS7)                  0.25      9.71 f
+  ctmTdsLR_1_933/O (NAND2B1X1AS7)                  0.26      9.97 f
+  U310/O (AOI12X4AS7)                              0.34     10.31 r
+  U1335/O (NAND2X1AS7)                             0.14     10.45 f
+  U1336/O (XOR2X1AS7)                              0.33     10.78 r
+  U1337/O (NOR2X1AS7)                              0.10     10.87 f
+  U1348/O (OAI12X1AS7)                             0.39     11.27 r
+  U1355/O (AOI12X2AS7)                             0.17     11.43 f
+  U1363/O (OAI12X2AS7)                             0.21     11.64 r
+  U1409/CO (FAX1AS7)                               0.34     11.98 r
+  U1368/CO (FAX1AS7)                               0.32     12.30 r
+  U307/O (NAND2X2AS7)                              0.35     12.65 f
+  U1370/O (OAI12X1AS7)                             0.35     13.00 r
+  U1371/O (OAI12X1AS7)                             0.20     13.20 f
+  U1372/O (INVX1AS7)                               0.19     13.39 r
+  U1376/O (OAI12X2AS7)                             0.11     13.51 f
+  U1385/O (AOI12X2AS7)                             0.26     13.76 r
+  U1393/O (OAI12X2AS7)                             0.13     13.89 f
+  ctmTdsLR_1_696/O (OAI12B2X1AS7)                  0.24     14.13 f
+  U1457/CO (FAX1AS7)                               0.43     14.55 f
+  U1461/CO (FAX1AS7)                               0.45     15.00 f
+  U1414/CO (FAX1AS7)                               0.41     15.41 f
+  U1415/O (NAND2X2AS7)                             0.39     15.80 r
+  U1416/O (OAI12X1AS7)                             0.09     15.89 f
+  U1417/O (OAI12X1AS7)                             0.20     16.09 r
+  U1418/O (INVX1AS7)                               0.10     16.19 f
+  U1422/O (OAI12X1AS7)                             0.35     16.55 r
+  U1431/O (AOI12X2AS7)                             0.15     16.70 f
+  U1439/O (OAI12X2AS7)                             0.24     16.94 r
+  ctmTdsLR_1_700/O (OAI12B2X1AS7)                  0.26     17.20 r
+  U1508/CO (FAX1AS7)                               0.33     17.52 r
+  U1517/CO (FAX1AS7)                               0.34     17.86 r
+  U1521/CO (FAX1AS7)                               0.34     18.20 r
+  U1465/CO (FAX1AS7)                               0.37     18.58 r
+  U306/O (NAND2X4AS7)                              0.25     18.83 f
+  U1467/O (OAI12X1AS7)                             0.29     19.12 r
+  U1468/O (OAI12X1AS7)                             0.21     19.33 f
+  U1469/O (INVX1AS7)                               0.17     19.50 r
+  U1473/O (OAI12X1AS7)                             0.17     19.66 f
+  U1482/O (AOI12X2AS7)                             0.27     19.93 r
+  U1490/O (OAI12X2AS7)                             0.14     20.07 f
+  ctmTdsLR_1_791/O (OAI12B2X1AS7)                  0.24     20.31 f
+  U1569/CO (FAX1AS7)                               0.47     20.77 f
+  ctmTdsLR_1_298/O (NAND2X1AS7)                    0.15     20.92 r
+  ctmTdsLR_2_299/O (NAND2B1X1AS7)                  0.13     21.05 f
+  U1578/CO (FAX1AS7)                               0.41     21.46 f
+  U1582/CO (FAX1AS7)                               0.43     21.89 f
+  U1585/CO (FAX1AS7)                               0.41     22.30 f
+  U1525/O (NAND2X2AS7)                             0.45     22.75 r
+  U1536/O (NOR2X1AS7)                              0.05     22.80 f
+  U1537/O (AOI12X1AS7)                             0.39     23.20 r
+  U1539/O (NAND2X1AS7)                             0.17     23.36 f
+  U1540/O (INVX1AS7)                               0.15     23.51 r
+  U1541/O (AOI12X2AS7)                             0.10     23.62 f
+  U1549/O (OAI12X1AS7)                             0.39     24.01 r
+  U1559/O (AOI12X2AS7)                             0.15     24.16 f
+  U1567/O (OAI12X2AS7)                             0.21     24.37 r
+  U1637/CO (FAX1AS7)                               0.33     24.69 r
+  U1641/CO (FAX1AS7)                               0.32     25.02 r
+  U1645/CO (FAX1AS7)                               0.32     25.34 r
+  U1649/CO (FAX1AS7)                               0.33     25.67 r
+  U1652/CO (FAX1AS7)                               0.38     26.05 r
+  U305/O (NAND2X4AS7)                              0.27     26.32 f
+  U1588/O (OAI12X1AS7)                             0.29     26.61 r
+  U1589/O (OAI12X1AS7)                             0.21     26.82 f
+  U1590/O (CLKINVX2AS7)                            0.12     26.94 r
+  U1594/O (OAI12X1AS7)                             0.17     27.11 f
+  U1603/O (AOI12X2AS7)                             0.30     27.41 r
+  U1611/O (OAI12X2AS7)                             0.15     27.56 f
+  U1621/O (AOI12X2AS7)                             0.25     27.80 r
+  U1629/O (OAI12X2AS7)                             0.11     27.92 f
+  U1702/CO (FAX1AS7)                               0.43     28.35 f
+  U1706/CO (FAX1AS7)                               0.43     28.78 f
+  U1710/CO (FAX1AS7)                               0.43     29.21 f
+  U1714/CO (FAX1AS7)                               0.44     29.65 f
+  U1718/CO (FAX1AS7)                               0.43     30.09 f
+  U1721/CO (FAX1AS7)                               0.45     30.54 f
+  U304/O (NAND2X4AS7)                              0.31     30.85 r
+  U1655/O (OAI12X1AS7)                             0.21     31.06 f
+  U1656/O (INVX1AS7)                               0.20     31.27 r
+  U1659/O (OAI12X2AS7)                             0.12     31.39 f
+  U1668/O (AOI12X2AS7)                             0.25     31.64 r
+  U1676/O (OAI12X1AS7)                             0.20     31.84 f
+  U1686/O (AOI12X2AS7)                             0.25     32.09 r
+  U1694/O (OAI12X1AS7)                             0.14     32.23 f
+  U1778/CO (FAX1AS7)                               0.43     32.66 f
+  U1782/CO (FAX1AS7)                               0.43     33.09 f
+  U1786/CO (FAX1AS7)                               0.43     33.52 f
+  U1790/CO (FAX1AS7)                               0.43     33.95 f
+  U1794/CO (FAX1AS7)                               0.44     34.39 f
+  U1798/CO (FAX1AS7)                               0.44     34.83 f
+  U1801/CO (FAX1AS7)                               0.45     35.28 f
+  U1724/O (NAND2X4AS7)                             0.33     35.61 r
+  U1726/O (OAI12X1AS7)                             0.24     35.85 f
+  U1727/O (INVX1AS7)                               0.15     36.00 r
+  U1730/O (OAI12X1AS7)                             0.19     36.19 f
+  U1739/O (AOI12X1AS7)                             0.35     36.54 r
+  U1747/O (OAI12X1AS7)                             0.20     36.74 f
+  U1757/O (AOI12X1AS7)                             0.33     37.07 r
+  U1765/O (OAI12X1AS7)                             0.15     37.23 f
+  ctmTdsLR_1_884/O (OAI12B2X1AS7)                  0.24     37.47 f
+  U1852/CO (FAX1AS7)                               0.43     37.90 f
+  U1854/CO (FAX1AS7)                               0.42     38.32 f
+  U1856/CO (FAX1AS7)                               0.42     38.74 f
+  U1858/CO (FAX1AS7)                               0.45     39.19 f
+  U1860/CO (FAX1AS7)                               0.43     39.63 f
+  U1862/CO (FAX1AS7)                               0.44     40.07 f
+  U1864/CO (FAX1AS7)                               0.46     40.52 f
+  U313/O (NAND2X4AS7)                              0.35     40.88 r
+  U1813/O (MUX2X1AS7)                              0.42     41.30 f
+  U1815/O (NAND2X1AS7)                             0.16     41.46 r
+  U1818/O (INVX1AS7)                               0.09     41.55 f
+  U1819/O (AOI12X2AS7)                             0.32     41.87 r
+  U1825/O (OAI12X1AS7)                             0.17     42.04 f
+  U1833/O (AOI12X1AS7)                             0.34     42.38 r
+  U1839/O (OAI12X1AS7)                             0.16     42.54 f
+  ctmTdsLR_1_518/O (OAI12B2X1AS7)                  0.24     42.78 f
+  U1913/CO (FAX1AS7)                               0.43     43.22 f
+  U1918/CO (FAX1AS7)                               0.43     43.64 f
+  U1923/CO (FAX1AS7)                               0.43     44.07 f
+  U1928/CO (FAX1AS7)                               0.43     44.49 f
+  U1933/CO (FAX1AS7)                               0.44     44.94 f
+  U1938/CO (FAX1AS7)                               0.44     45.38 f
+  U1944/CO (FAX1AS7)                               0.44     45.82 f
+  U1947/CO (FAX1AS7)                               0.41     46.23 f
+  U1866/O (NAND2X2AS7)                             0.60     46.83 r
+  U1887/O (MUX2X1AS7)                              0.52     47.35 f
+  U1888/O (NOR2X1AS7)                              0.21     47.56 r
+  ctmTdsLR_1_524/O (OAI22B2X1AS7)                  0.11     47.68 f
+  ctmTdsLR_1_582/O (AOI22X1AS7)                    0.24     47.91 r
+  U1906/O (OAI12X1AS7)                             0.14     48.05 f
+  ctmTdsLR_1_835/O (OAI222X1AS7)                   0.25     48.30 r
+  ctmTdsLR_2_836/O (OAI12B2X1AS7)                  0.13     48.43 f
+  U1922/O (AOI12X1AS7)                             0.23     48.65 r
+  U1927/O (OAI12X1AS7)                             0.14     48.79 f
+  ctmTdsLR_1_945/O (OAI222X1AS7)                   0.34     49.13 r
+  U1937/O (OAI12X1AS7)                             0.12     49.25 f
+  ctmTdsLR_1_474/O (OAI12X1AS7)                    0.13     49.38 r
+  ctmTdsLR_2_475/O (OAI12B2X1AS7)                  0.16     49.54 f
+  U1946/CO (FAX1AS7)                               0.44     49.98 f
+  U1949/CO (FAX1AS7)                               0.42     50.39 f
+  U1950/O (CLKINVX2AS7)                            0.10     50.50 r
+  U2887/O (OAI112X1AS7)                            0.20     50.70 f
+  Result_reg_0_/D (DFFRBQX1AS7)                    0.00     50.70 f
+  data arrival time                                         50.70
+
+  clock core_clock (rise edge)                    50.00     50.00
+  clock network delay (propagated)                 1.28     51.28
+  Result_reg_0_/CK (DFFRBQX1AS7)                   0.00     51.28 r
+  library setup time                              -0.51     50.78
+  data required time                                        50.78
+  ------------------------------------------------------------------------
+  data required time                                        50.78
+  data arrival time                                        -50.70
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.08
+
+
+
+  Startpoint: B_reg_reg_13_ (rising edge-triggered flip-flop clocked by core_clock)
+  Endpoint: Result_reg_1_ (rising edge-triggered flip-flop clocked by core_clock)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: core_clock
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 1.08      1.08
+
+  B_reg_reg_13_/CK (DFFRBQX2AS7)                   0.00      1.08 r
+  B_reg_reg_13_/Q (DFFRBQX2AS7)                    0.49      1.57 f
+  HFSINV_1202_13/O (CLKINVX2AS7)                   0.22      1.79 r
+  HFSBUF_115_11/O (BUFX3AS7)                       0.30      2.09 r
+  U1205/O (NAND2X2AS7)                             0.11      2.20 f
+  U1206/O (NOR2X2AS7)                              0.34      2.54 r
+  U1207/O (NAND2X2AS7)                             0.13      2.67 f
+  U300/O (NOR2X2AS7)                               0.32      2.99 r
+  U1208/O (NAND2X2AS7)                             0.15      3.14 f
+  ctmTdsLR_2_305/O (CLKINVX2AS7)                   0.12      3.26 r
+  ctmTdsLR_1_304/O (NAND3B1X2AS7)                  0.16      3.42 f
+  U302/O (NOR2X2AS7)                               0.27      3.69 r
+  U1210/O (NAND2X2AS7)                             0.13      3.82 f
+  U1211/O (NOR2X2AS7)                              0.23      4.05 r
+  U1212/O (NAND2X2AS7)                             0.16      4.21 f
+  ctmTdsLR_3_303/O (INVX1AS7)                      0.16      4.37 r
+  ctmTdsLR_1_301/O (NAND2B1X2AS7)                  0.13      4.49 f
+  U1216/O (OAI12X2AS7)                             0.23      4.72 r
+  U1220/O (OAI12X1AS7)                             0.16      4.89 f
+  U1225/O (OAI112X2AS7)                            0.26      5.15 r
+  ctmTdsLR_1_819/O (OAI12B2X4AS7)                  0.15      5.30 f
+  U1232/O (OAI12X1AS7)                             0.24      5.54 r
+  U1238/O (AOI12X1AS7)                             0.21      5.75 f
+  U1239/O (NAND2X1AS7)                             0.24      5.99 r
+  U1240/O (NAND2X1AS7)                             0.14      6.13 f
+  U1243/O (NAND2X1AS7)                             0.15      6.28 r
+  U1253/O (NAND4X2AS7)                             0.26      6.54 f
+  U1259/O (NOR2X2AS7)                              0.25      6.78 r
+  U1260/O (XOR2X1AS7)                              0.38      7.17 f
+  ctmTdsLR_1_686/O (OAI12B2X1AS7)                  0.12      7.28 r
+  ctmTdsLR_1_778/O (OAI12B2X1AS7)                  0.17      7.46 f
+  U1267/O (NAND2X1AS7)                             0.13      7.58 r
+  U1268/O (NAND2B1X1AS7)                           0.11      7.70 f
+  ctmTdsLR_1_300/O (OAI12B2X2AS7)                  0.21      7.91 r
+  U287/O (OAI12X4AS7)                              0.15      8.06 f
+  U1284/O (INVX2AS7)                               0.26      8.32 r
+  U1285/O (NAND2X4AS7)                             0.11      8.43 f
+  U1288/O (NAND3X1AS7)                             0.21      8.64 r
+  U1295/O (AOI12X2AS7)                             0.14      8.78 f
+  U1299/O (OAI12X2AS7)                             0.19      8.96 r
+  U1307/O (NAND2X2AS7)                             0.12      9.08 f
+  ctmTdsLR_1_687/O (OAI22B2X2AS7)                  0.27      9.35 r
+  ctmTdsLR_2_851/O (NAND2B1X1AS7)                  0.11      9.46 f
+  ctmTdsLR_3_852/O (OAI22B2X1AS7)                  0.25      9.71 f
+  ctmTdsLR_1_933/O (NAND2B1X1AS7)                  0.26      9.97 f
+  U310/O (AOI12X4AS7)                              0.34     10.31 r
+  U1335/O (NAND2X1AS7)                             0.14     10.45 f
+  U1336/O (XOR2X1AS7)                              0.33     10.78 r
+  U1337/O (NOR2X1AS7)                              0.10     10.87 f
+  U1348/O (OAI12X1AS7)                             0.39     11.27 r
+  U1355/O (AOI12X2AS7)                             0.17     11.43 f
+  U1363/O (OAI12X2AS7)                             0.21     11.64 r
+  U1409/CO (FAX1AS7)                               0.34     11.98 r
+  U1368/CO (FAX1AS7)                               0.32     12.30 r
+  U307/O (NAND2X2AS7)                              0.35     12.65 f
+  U1370/O (OAI12X1AS7)                             0.35     13.00 r
+  U1371/O (OAI12X1AS7)                             0.20     13.20 f
+  U1372/O (INVX1AS7)                               0.19     13.39 r
+  U1376/O (OAI12X2AS7)                             0.11     13.51 f
+  U1385/O (AOI12X2AS7)                             0.26     13.76 r
+  U1393/O (OAI12X2AS7)                             0.13     13.89 f
+  ctmTdsLR_1_696/O (OAI12B2X1AS7)                  0.24     14.13 f
+  U1457/CO (FAX1AS7)                               0.43     14.55 f
+  U1461/CO (FAX1AS7)                               0.45     15.00 f
+  U1414/CO (FAX1AS7)                               0.41     15.41 f
+  U1415/O (NAND2X2AS7)                             0.39     15.80 r
+  U1416/O (OAI12X1AS7)                             0.09     15.89 f
+  U1417/O (OAI12X1AS7)                             0.20     16.09 r
+  U1418/O (INVX1AS7)                               0.10     16.19 f
+  U1422/O (OAI12X1AS7)                             0.35     16.55 r
+  U1431/O (AOI12X2AS7)                             0.15     16.70 f
+  U1439/O (OAI12X2AS7)                             0.24     16.94 r
+  ctmTdsLR_1_700/O (OAI12B2X1AS7)                  0.26     17.20 r
+  U1508/CO (FAX1AS7)                               0.33     17.52 r
+  U1517/CO (FAX1AS7)                               0.34     17.86 r
+  U1521/CO (FAX1AS7)                               0.34     18.20 r
+  U1465/CO (FAX1AS7)                               0.37     18.58 r
+  U306/O (NAND2X4AS7)                              0.25     18.83 f
+  U1467/O (OAI12X1AS7)                             0.29     19.12 r
+  U1468/O (OAI12X1AS7)                             0.21     19.33 f
+  U1469/O (INVX1AS7)                               0.17     19.50 r
+  U1473/O (OAI12X1AS7)                             0.17     19.66 f
+  U1482/O (AOI12X2AS7)                             0.27     19.93 r
+  U1490/O (OAI12X2AS7)                             0.14     20.07 f
+  ctmTdsLR_1_791/O (OAI12B2X1AS7)                  0.24     20.31 f
+  U1569/CO (FAX1AS7)                               0.47     20.77 f
+  ctmTdsLR_1_298/O (NAND2X1AS7)                    0.15     20.92 r
+  ctmTdsLR_2_299/O (NAND2B1X1AS7)                  0.13     21.05 f
+  U1578/CO (FAX1AS7)                               0.41     21.46 f
+  U1582/CO (FAX1AS7)                               0.43     21.89 f
+  U1585/CO (FAX1AS7)                               0.41     22.30 f
+  U1525/O (NAND2X2AS7)                             0.45     22.75 r
+  U1536/O (NOR2X1AS7)                              0.05     22.80 f
+  U1537/O (AOI12X1AS7)                             0.39     23.20 r
+  U1539/O (NAND2X1AS7)                             0.17     23.36 f
+  U1540/O (INVX1AS7)                               0.15     23.51 r
+  U1541/O (AOI12X2AS7)                             0.10     23.62 f
+  U1549/O (OAI12X1AS7)                             0.39     24.01 r
+  U1559/O (AOI12X2AS7)                             0.15     24.16 f
+  U1567/O (OAI12X2AS7)                             0.21     24.37 r
+  U1637/CO (FAX1AS7)                               0.33     24.69 r
+  U1641/CO (FAX1AS7)                               0.32     25.02 r
+  U1645/CO (FAX1AS7)                               0.32     25.34 r
+  U1649/CO (FAX1AS7)                               0.33     25.67 r
+  U1652/CO (FAX1AS7)                               0.38     26.05 r
+  U305/O (NAND2X4AS7)                              0.27     26.32 f
+  U1588/O (OAI12X1AS7)                             0.29     26.61 r
+  U1589/O (OAI12X1AS7)                             0.21     26.82 f
+  U1590/O (CLKINVX2AS7)                            0.12     26.94 r
+  U1594/O (OAI12X1AS7)                             0.17     27.11 f
+  U1603/O (AOI12X2AS7)                             0.30     27.41 r
+  U1611/O (OAI12X2AS7)                             0.15     27.56 f
+  U1621/O (AOI12X2AS7)                             0.25     27.80 r
+  U1629/O (OAI12X2AS7)                             0.11     27.92 f
+  U1702/CO (FAX1AS7)                               0.43     28.35 f
+  U1706/CO (FAX1AS7)                               0.43     28.78 f
+  U1710/CO (FAX1AS7)                               0.43     29.21 f
+  U1714/CO (FAX1AS7)                               0.44     29.65 f
+  U1718/CO (FAX1AS7)                               0.43     30.09 f
+  U1721/CO (FAX1AS7)                               0.45     30.54 f
+  U304/O (NAND2X4AS7)                              0.31     30.85 r
+  U1655/O (OAI12X1AS7)                             0.21     31.06 f
+  U1656/O (INVX1AS7)                               0.20     31.27 r
+  U1659/O (OAI12X2AS7)                             0.12     31.39 f
+  U1668/O (AOI12X2AS7)                             0.25     31.64 r
+  U1676/O (OAI12X1AS7)                             0.20     31.84 f
+  U1686/O (AOI12X2AS7)                             0.25     32.09 r
+  U1694/O (OAI12X1AS7)                             0.14     32.23 f
+  U1778/CO (FAX1AS7)                               0.43     32.66 f
+  U1782/CO (FAX1AS7)                               0.43     33.09 f
+  U1786/CO (FAX1AS7)                               0.43     33.52 f
+  U1790/CO (FAX1AS7)                               0.43     33.95 f
+  U1794/CO (FAX1AS7)                               0.44     34.39 f
+  U1798/CO (FAX1AS7)                               0.44     34.83 f
+  U1801/CO (FAX1AS7)                               0.45     35.28 f
+  U1724/O (NAND2X4AS7)                             0.33     35.61 r
+  U1726/O (OAI12X1AS7)                             0.24     35.85 f
+  U1727/O (INVX1AS7)                               0.15     36.00 r
+  U1730/O (OAI12X1AS7)                             0.19     36.19 f
+  U1739/O (AOI12X1AS7)                             0.35     36.54 r
+  U1747/O (OAI12X1AS7)                             0.20     36.74 f
+  U1757/O (AOI12X1AS7)                             0.33     37.07 r
+  U1765/O (OAI12X1AS7)                             0.15     37.23 f
+  ctmTdsLR_1_884/O (OAI12B2X1AS7)                  0.24     37.47 f
+  U1852/CO (FAX1AS7)                               0.43     37.90 f
+  U1854/CO (FAX1AS7)                               0.42     38.32 f
+  U1856/CO (FAX1AS7)                               0.42     38.74 f
+  U1858/CO (FAX1AS7)                               0.45     39.19 f
+  U1860/CO (FAX1AS7)                               0.43     39.63 f
+  U1862/CO (FAX1AS7)                               0.44     40.07 f
+  U1864/CO (FAX1AS7)                               0.46     40.52 f
+  U313/O (NAND2X4AS7)                              0.35     40.88 r
+  U1813/O (MUX2X1AS7)                              0.42     41.30 f
+  U1815/O (NAND2X1AS7)                             0.16     41.46 r
+  U1818/O (INVX1AS7)                               0.09     41.55 f
+  U1819/O (AOI12X2AS7)                             0.32     41.87 r
+  U1825/O (OAI12X1AS7)                             0.17     42.04 f
+  U1833/O (AOI12X1AS7)                             0.34     42.38 r
+  U1839/O (OAI12X1AS7)                             0.16     42.54 f
+  ctmTdsLR_1_518/O (OAI12B2X1AS7)                  0.24     42.78 f
+  U1913/CO (FAX1AS7)                               0.43     43.22 f
+  U1918/CO (FAX1AS7)                               0.43     43.64 f
+  U1923/CO (FAX1AS7)                               0.43     44.07 f
+  U1928/CO (FAX1AS7)                               0.43     44.49 f
+  U1933/CO (FAX1AS7)                               0.44     44.94 f
+  U1938/CO (FAX1AS7)                               0.44     45.38 f
+  U1944/CO (FAX1AS7)                               0.44     45.82 f
+  U1947/CO (FAX1AS7)                               0.41     46.23 f
+  U1866/O (NAND2X2AS7)                             0.60     46.83 r
+  U2908/O (OAI12X1AS7)                             0.16     46.99 f
+  U3071/O (NAND2B1X1AS7)                           0.23     47.21 f
+  Result_reg_1_/D (DFFRBQX1AS7)                    0.00     47.21 f
+  data arrival time                                         47.21
+
+  clock core_clock (rise edge)                    50.00     50.00
+  clock network delay (propagated)                 1.20     51.20
+  Result_reg_1_/CK (DFFRBQX1AS7)                   0.00     51.20 r
+  library setup time                              -0.34     50.86
+  data required time                                        50.86
+  ------------------------------------------------------------------------
+  data required time                                        50.86
+  data arrival time                                        -47.21
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.65
+
+
+
+  Startpoint: B_reg_reg_13_ (rising edge-triggered flip-flop clocked by core_clock)
+  Endpoint: Result_reg_14_ (rising edge-triggered flip-flop clocked by core_clock)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: core_clock
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 1.08      1.08
+
+  B_reg_reg_13_/CK (DFFRBQX2AS7)                   0.00      1.08 r
+  B_reg_reg_13_/Q (DFFRBQX2AS7)                    0.49      1.57 f
+  HFSINV_1202_13/O (CLKINVX2AS7)                   0.22      1.79 r
+  HFSBUF_115_11/O (BUFX3AS7)                       0.30      2.09 r
+  U1205/O (NAND2X2AS7)                             0.11      2.20 f
+  U1206/O (NOR2X2AS7)                              0.34      2.54 r
+  U1207/O (NAND2X2AS7)                             0.13      2.67 f
+  U300/O (NOR2X2AS7)                               0.32      2.99 r
+  U1208/O (NAND2X2AS7)                             0.15      3.14 f
+  ctmTdsLR_2_305/O (CLKINVX2AS7)                   0.12      3.26 r
+  ctmTdsLR_1_304/O (NAND3B1X2AS7)                  0.16      3.42 f
+  U302/O (NOR2X2AS7)                               0.27      3.69 r
+  U1210/O (NAND2X2AS7)                             0.13      3.82 f
+  U1211/O (NOR2X2AS7)                              0.23      4.05 r
+  U1212/O (NAND2X2AS7)                             0.16      4.21 f
+  ctmTdsLR_3_303/O (INVX1AS7)                      0.16      4.37 r
+  ctmTdsLR_1_301/O (NAND2B1X2AS7)                  0.13      4.49 f
+  U1216/O (OAI12X2AS7)                             0.23      4.72 r
+  U1220/O (OAI12X1AS7)                             0.16      4.89 f
+  U1225/O (OAI112X2AS7)                            0.26      5.15 r
+  ctmTdsLR_1_819/O (OAI12B2X4AS7)                  0.15      5.30 f
+  U1232/O (OAI12X1AS7)                             0.24      5.54 r
+  U1238/O (AOI12X1AS7)                             0.21      5.75 f
+  U1239/O (NAND2X1AS7)                             0.24      5.99 r
+  U1240/O (NAND2X1AS7)                             0.14      6.13 f
+  U1243/O (NAND2X1AS7)                             0.15      6.28 r
+  U1253/O (NAND4X2AS7)                             0.26      6.54 f
+  U1259/O (NOR2X2AS7)                              0.25      6.78 r
+  U1260/O (XOR2X1AS7)                              0.38      7.17 f
+  ctmTdsLR_1_686/O (OAI12B2X1AS7)                  0.12      7.28 r
+  ctmTdsLR_1_778/O (OAI12B2X1AS7)                  0.17      7.46 f
+  U1267/O (NAND2X1AS7)                             0.13      7.58 r
+  U1268/O (NAND2B1X1AS7)                           0.11      7.70 f
+  ctmTdsLR_1_300/O (OAI12B2X2AS7)                  0.21      7.91 r
+  U287/O (OAI12X4AS7)                              0.15      8.06 f
+  U1284/O (INVX2AS7)                               0.26      8.32 r
+  U1285/O (NAND2X4AS7)                             0.11      8.43 f
+  U1288/O (NAND3X1AS7)                             0.21      8.64 r
+  U1295/O (AOI12X2AS7)                             0.14      8.78 f
+  U1299/O (OAI12X2AS7)                             0.19      8.96 r
+  U1307/O (NAND2X2AS7)                             0.12      9.08 f
+  ctmTdsLR_1_687/O (OAI22B2X2AS7)                  0.27      9.35 r
+  ctmTdsLR_2_821/O (AOI12B2X1AS7)                  0.67     10.02 r
+  U1982/O (NAND2X1AS7)                             0.17     10.20 f
+  U1986/O (OAI12X1AS7)                             0.44     10.64 r
+  U1987/O (NOR2X1AS7)                              0.10     10.74 f
+  U1994/O (OAI12X1AS7)                             0.34     11.08 r
+  U1998/O (AOI12X1AS7)                             0.20     11.27 f
+  ctmTdsLR_1_478/O (OAI13X1AS7)                    0.34     11.61 r
+  U2010/O (NAND2X1AS7)                             0.48     12.10 f
+  U2027/O (OAI12X1AS7)                             0.49     12.59 r
+  U2028/O (CLKINVX1AS7)                            0.18     12.77 f
+  U2029/O (OAI12X1AS7)                             0.42     13.19 r
+  U2033/O (AOI12X1AS7)                             0.15     13.34 f
+  U2070/O (OAI12X1AS7)                             0.27     13.61 r
+  U2071/O (NAND2X1AS7)                             0.53     14.14 f
+  U2087/O (OAI12X1AS7)                             0.51     14.65 r
+  U2088/O (CLKINVX1AS7)                            0.20     14.84 f
+  U2089/O (OAI12X1AS7)                             0.45     15.29 r
+  U2093/O (AOI12X1AS7)                             0.16     15.45 f
+  U2138/O (OAI12X1AS7)                             0.39     15.84 r
+  ctmTdsLR_1_854/O (AOI12X1AS7)                    0.15     15.99 f
+  ctmTdsLR_1_902/O (CLKINVX1AS7)                   0.14     16.13 r
+  ctmTdsLR_2_903/O (OAI112X2AS7)                   0.49     16.62 f
+  U2158/O (OAI12X1AS7)                             0.51     17.13 r
+  U2159/O (CLKINVX1AS7)                            0.19     17.32 f
+  U2160/O (OAI12X1AS7)                             0.44     17.76 r
+  U2164/O (AOI12X1AS7)                             0.16     17.93 f
+  U2209/O (OAI12X1AS7)                             0.39     18.32 r
+  ctmTdsLR_2_784/O (OAI12B2X1AS7)                  0.23     18.55 r
+  U2223/O (NAND2X1AS7)                             0.55     19.10 f
+  U2239/O (OAI12X1AS7)                             0.54     19.63 r
+  U2240/O (CLKINVX1AS7)                            0.21     19.84 f
+  U2241/O (OAI12X1AS7)                             0.41     20.25 r
+  U2245/O (AOI12X1AS7)                             0.18     20.43 f
+  U2288/O (OAI12X1AS7)                             0.31     20.74 r
+  ctmTdsLR_2_619/O (NAND3B1X1AS7)                  0.15     20.90 f
+  ctmTdsLR_3_620/O (OAI112X1AS7)                   0.22     21.12 r
+  U2404/CO (FAX1AS7)                               0.33     21.45 r
+  U296/O (NAND2X1AS7)                              0.66     22.11 f
+  U2311/O (OAI12X1AS7)                             0.64     22.75 r
+  U2312/O (CLKINVX1AS7)                            0.20     22.96 f
+  U2325/O (OAI12X1AS7)                             0.34     23.29 r
+  U2329/O (AOI12X1AS7)                             0.21     23.50 f
+  U2370/O (OAI12X1AS7)                             0.37     23.87 r
+  U2381/O (AOI12X1AS7)                             0.21     24.08 f
+  U2391/O (OAI12X1AS7)                             0.43     24.52 r
+  ctmTdsLR_1_627/O (OAI12B2X1AS7)                  0.28     24.80 r
+  U2507/CO (FAX1AS7)                               0.29     25.09 r
+  U2406/O (NAND2X1AS7)                             0.70     25.79 f
+  U2421/O (OAI12X1AS7)                             0.69     26.48 r
+  U2422/O (CLKINVX1AS7)                            0.20     26.68 f
+  U2423/O (OAI12X1AS7)                             0.38     27.06 r
+  U2427/O (AOI12X1AS7)                             0.17     27.24 f
+  U2471/O (OAI12X1AS7)                             0.36     27.59 r
+  U2482/O (AOI12X1AS7)                             0.22     27.81 f
+  U2490/O (OAI12X1AS7)                             0.37     28.18 r
+  ctmTdsLR_1_635/O (OAI12B2X1AS7)                  0.27     28.46 r
+  U2613/CO (FAX1AS7)                               0.35     28.81 r
+  U2619/CO (FAX1AS7)                               0.30     29.11 r
+  U297/O (NAND2X1AS7)                              0.70     29.81 f
+  U2510/O (OAI12X1AS7)                             0.63     30.44 r
+  U2511/O (CLKINVX1AS7)                            0.21     30.65 f
+  U2525/O (OAI12X1AS7)                             0.35     31.01 r
+  U2529/O (AOI12X1AS7)                             0.16     31.17 f
+  ctmTdsLR_2_469/O (OAI112X1AS7)                   0.39     31.56 r
+  U2574/O (AOI12X1AS7)                             0.22     31.78 f
+  U2584/O (OAI12X1AS7)                             0.36     32.14 r
+  U2593/O (AOI12X1AS7)                             0.21     32.35 f
+  U2602/O (OAI12X1AS7)                             0.40     32.75 r
+  U2611/O (AOI12X1AS7)                             0.23     32.98 f
+  U2618/O (OAI12X1AS7)                             0.41     33.39 r
+  U2736/CO (FAX1AS7)                               0.32     33.71 r
+  U308/O (NAND2X1AS7)                              0.74     34.45 f
+  U2635/O (OAI12X1AS7)                             0.70     35.16 r
+  U2636/O (CLKINVX1AS7)                            0.14     35.30 f
+  U2637/O (OAI12X1AS7)                             0.33     35.63 r
+  U2641/O (AOI12X1AS7)                             0.17     35.80 f
+  ctmTdsLR_2_573/O (OAI112X1AS7)                   0.41     36.20 r
+  U2685/O (AOI12X1AS7)                             0.23     36.43 f
+  U2693/O (OAI12X1AS7)                             0.37     36.80 r
+  U2703/O (AOI12X1AS7)                             0.21     37.02 f
+  U2711/O (OAI12X1AS7)                             0.39     37.41 r
+  U2721/O (AOI12X1AS7)                             0.24     37.65 f
+  U2729/O (OAI12X1AS7)                             0.33     37.98 r
+  U2863/CO (FAX1AS7)                               0.38     38.36 r
+  U2873/CO (FAX1AS7)                               0.29     38.66 r
+  U2738/O (CLKINVX1AS7)                            0.10     38.75 f
+  U311/O (NOR2X1AS7)                               0.99     39.74 r
+  U2739/O (CLKINVX1AS7)                            0.26     40.00 f
+  U2740/O (CLKINVX1AS7)                            0.64     40.64 r
+  ctmTdsLR_1_715/OB (MUX2BX1AS7)                   0.35     40.99 f
+  U2744/O (CLKINVX1AS7)                            0.21     41.20 r
+  U2761/O (NAND2X1AS7)                             0.17     41.37 f
+  U2763/O (OAI12X1AS7)                             0.27     41.63 r
+  U2764/O (AOI12X1AS7)                             0.12     41.75 f
+  ctmTdsLR_2_942/O (OAI112X1AS7)                   0.40     42.16 r
+  U2799/O (AOI12X1AS7)                             0.23     42.38 f
+  U2808/O (OAI12X1AS7)                             0.36     42.74 r
+  U2817/O (AOI12X1AS7)                             0.22     42.96 f
+  U2826/O (OAI12X1AS7)                             0.38     43.34 r
+  U2835/O (AOI12X1AS7)                             0.22     43.56 f
+  U2844/O (OAI12X1AS7)                             0.40     43.96 r
+  U2853/O (AOI12X1AS7)                             0.24     44.20 f
+  U2862/O (OAI12X1AS7)                             0.43     44.63 r
+  ctmTdsLR_1_886/O (OAI12B2X1AS7)                  0.28     44.91 r
+  U2951/CO (FAX1AS7)                               0.33     45.24 r
+  U2875/O (CLKINVX1AS7)                            0.11     45.35 f
+  U312/O (NOR2X1AS7)                               1.28     46.62 r
+  U2940/O (NAND2X1AS7)                             0.22     46.84 f
+  U2949/O (OAI112X1AS7)                            0.22     47.05 r
+  U2950/O (AOI12X1AS7)                             0.16     47.22 f
+  U3097/O (NAND2X1AS7)                             0.18     47.39 r
+  Result_reg_14_/D (DFFRBQX1AS7)                   0.00     47.39 r
+  data arrival time                                         47.39
+
+  clock core_clock (rise edge)                    50.00     50.00
+  clock network delay (propagated)                 1.25     51.25
+  Result_reg_14_/CK (DFFRBQX1AS7)                  0.00     51.25 r
+  library setup time                              -0.10     51.15
+  data required time                                        51.15
+  ------------------------------------------------------------------------
+  data required time                                        51.15
+  data arrival time                                        -47.39
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.75
+
+
+
+  Startpoint: B_reg_reg_13_ (rising edge-triggered flip-flop clocked by core_clock)
+  Endpoint: Result_reg_11_ (rising edge-triggered flip-flop clocked by core_clock)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: core_clock
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 1.08      1.08
+
+  B_reg_reg_13_/CK (DFFRBQX2AS7)                   0.00      1.08 r
+  B_reg_reg_13_/Q (DFFRBQX2AS7)                    0.49      1.57 f
+  HFSINV_1202_13/O (CLKINVX2AS7)                   0.22      1.79 r
+  HFSBUF_115_11/O (BUFX3AS7)                       0.30      2.09 r
+  U1205/O (NAND2X2AS7)                             0.11      2.20 f
+  U1206/O (NOR2X2AS7)                              0.34      2.54 r
+  U1207/O (NAND2X2AS7)                             0.13      2.67 f
+  U300/O (NOR2X2AS7)                               0.32      2.99 r
+  U1208/O (NAND2X2AS7)                             0.15      3.14 f
+  ctmTdsLR_2_305/O (CLKINVX2AS7)                   0.12      3.26 r
+  ctmTdsLR_1_304/O (NAND3B1X2AS7)                  0.16      3.42 f
+  U302/O (NOR2X2AS7)                               0.27      3.69 r
+  U1210/O (NAND2X2AS7)                             0.13      3.82 f
+  U1211/O (NOR2X2AS7)                              0.23      4.05 r
+  U1212/O (NAND2X2AS7)                             0.16      4.21 f
+  ctmTdsLR_3_303/O (INVX1AS7)                      0.16      4.37 r
+  ctmTdsLR_1_301/O (NAND2B1X2AS7)                  0.13      4.49 f
+  U1216/O (OAI12X2AS7)                             0.23      4.72 r
+  U1220/O (OAI12X1AS7)                             0.16      4.89 f
+  U1225/O (OAI112X2AS7)                            0.26      5.15 r
+  ctmTdsLR_1_819/O (OAI12B2X4AS7)                  0.15      5.30 f
+  U1232/O (OAI12X1AS7)                             0.24      5.54 r
+  U1238/O (AOI12X1AS7)                             0.21      5.75 f
+  U1239/O (NAND2X1AS7)                             0.24      5.99 r
+  U1240/O (NAND2X1AS7)                             0.14      6.13 f
+  U1243/O (NAND2X1AS7)                             0.15      6.28 r
+  U1253/O (NAND4X2AS7)                             0.26      6.54 f
+  U1259/O (NOR2X2AS7)                              0.25      6.78 r
+  U1260/O (XOR2X1AS7)                              0.38      7.17 f
+  ctmTdsLR_1_686/O (OAI12B2X1AS7)                  0.12      7.28 r
+  ctmTdsLR_1_778/O (OAI12B2X1AS7)                  0.17      7.46 f
+  U1267/O (NAND2X1AS7)                             0.13      7.58 r
+  U1268/O (NAND2B1X1AS7)                           0.11      7.70 f
+  ctmTdsLR_1_300/O (OAI12B2X2AS7)                  0.21      7.91 r
+  U287/O (OAI12X4AS7)                              0.15      8.06 f
+  U1284/O (INVX2AS7)                               0.26      8.32 r
+  U1285/O (NAND2X4AS7)                             0.11      8.43 f
+  U1288/O (NAND3X1AS7)                             0.21      8.64 r
+  U1295/O (AOI12X2AS7)                             0.14      8.78 f
+  U1299/O (OAI12X2AS7)                             0.19      8.96 r
+  U1307/O (NAND2X2AS7)                             0.12      9.08 f
+  ctmTdsLR_1_687/O (OAI22B2X2AS7)                  0.27      9.35 r
+  ctmTdsLR_2_821/O (AOI12B2X1AS7)                  0.67     10.02 r
+  U1982/O (NAND2X1AS7)                             0.17     10.20 f
+  U1986/O (OAI12X1AS7)                             0.44     10.64 r
+  U1987/O (NOR2X1AS7)                              0.10     10.74 f
+  U1994/O (OAI12X1AS7)                             0.34     11.08 r
+  U1998/O (AOI12X1AS7)                             0.20     11.27 f
+  ctmTdsLR_1_478/O (OAI13X1AS7)                    0.34     11.61 r
+  U2010/O (NAND2X1AS7)                             0.48     12.10 f
+  U2027/O (OAI12X1AS7)                             0.49     12.59 r
+  U2028/O (CLKINVX1AS7)                            0.18     12.77 f
+  U2029/O (OAI12X1AS7)                             0.42     13.19 r
+  U2033/O (AOI12X1AS7)                             0.15     13.34 f
+  U2070/O (OAI12X1AS7)                             0.27     13.61 r
+  U2071/O (NAND2X1AS7)                             0.53     14.14 f
+  U2087/O (OAI12X1AS7)                             0.51     14.65 r
+  U2088/O (CLKINVX1AS7)                            0.20     14.84 f
+  U2089/O (OAI12X1AS7)                             0.45     15.29 r
+  U2093/O (AOI12X1AS7)                             0.16     15.45 f
+  U2138/O (OAI12X1AS7)                             0.39     15.84 r
+  ctmTdsLR_1_854/O (AOI12X1AS7)                    0.15     15.99 f
+  ctmTdsLR_1_902/O (CLKINVX1AS7)                   0.14     16.13 r
+  ctmTdsLR_2_903/O (OAI112X2AS7)                   0.49     16.62 f
+  U2158/O (OAI12X1AS7)                             0.51     17.13 r
+  U2159/O (CLKINVX1AS7)                            0.19     17.32 f
+  U2160/O (OAI12X1AS7)                             0.44     17.76 r
+  U2164/O (AOI12X1AS7)                             0.16     17.93 f
+  U2209/O (OAI12X1AS7)                             0.39     18.32 r
+  ctmTdsLR_2_784/O (OAI12B2X1AS7)                  0.23     18.55 r
+  U2223/O (NAND2X1AS7)                             0.55     19.10 f
+  U2239/O (OAI12X1AS7)                             0.54     19.63 r
+  U2240/O (CLKINVX1AS7)                            0.21     19.84 f
+  U2241/O (OAI12X1AS7)                             0.41     20.25 r
+  U2245/O (AOI12X1AS7)                             0.18     20.43 f
+  U2288/O (OAI12X1AS7)                             0.31     20.74 r
+  ctmTdsLR_2_619/O (NAND3B1X1AS7)                  0.15     20.90 f
+  ctmTdsLR_3_620/O (OAI112X1AS7)                   0.22     21.12 r
+  U2404/CO (FAX1AS7)                               0.33     21.45 r
+  U296/O (NAND2X1AS7)                              0.66     22.11 f
+  U2311/O (OAI12X1AS7)                             0.64     22.75 r
+  U2312/O (CLKINVX1AS7)                            0.20     22.96 f
+  U2325/O (OAI12X1AS7)                             0.34     23.29 r
+  U2329/O (AOI12X1AS7)                             0.21     23.50 f
+  U2370/O (OAI12X1AS7)                             0.37     23.87 r
+  U2381/O (AOI12X1AS7)                             0.21     24.08 f
+  U2391/O (OAI12X1AS7)                             0.43     24.52 r
+  ctmTdsLR_1_627/O (OAI12B2X1AS7)                  0.28     24.80 r
+  U2507/CO (FAX1AS7)                               0.29     25.09 r
+  U2406/O (NAND2X1AS7)                             0.70     25.79 f
+  U2421/O (OAI12X1AS7)                             0.69     26.48 r
+  U2422/O (CLKINVX1AS7)                            0.20     26.68 f
+  U2423/O (OAI12X1AS7)                             0.38     27.06 r
+  U2427/O (AOI12X1AS7)                             0.17     27.24 f
+  U2471/O (OAI12X1AS7)                             0.36     27.59 r
+  U2482/O (AOI12X1AS7)                             0.22     27.81 f
+  U2490/O (OAI12X1AS7)                             0.37     28.18 r
+  ctmTdsLR_1_635/O (OAI12B2X1AS7)                  0.27     28.46 r
+  U2613/CO (FAX1AS7)                               0.35     28.81 r
+  U2619/CO (FAX1AS7)                               0.30     29.11 r
+  U297/O (NAND2X1AS7)                              0.70     29.81 f
+  U2510/O (OAI12X1AS7)                             0.63     30.44 r
+  U2511/O (CLKINVX1AS7)                            0.21     30.65 f
+  U2525/O (OAI12X1AS7)                             0.35     31.01 r
+  U2529/O (AOI12X1AS7)                             0.16     31.17 f
+  ctmTdsLR_2_469/O (OAI112X1AS7)                   0.39     31.56 r
+  U2574/O (AOI12X1AS7)                             0.22     31.78 f
+  U2584/O (OAI12X1AS7)                             0.36     32.14 r
+  U2593/O (AOI12X1AS7)                             0.21     32.35 f
+  U2602/O (OAI12X1AS7)                             0.40     32.75 r
+  U2611/O (AOI12X1AS7)                             0.23     32.98 f
+  U2618/O (OAI12X1AS7)                             0.41     33.39 r
+  U2736/CO (FAX1AS7)                               0.32     33.71 r
+  U308/O (NAND2X1AS7)                              0.74     34.45 f
+  U2635/O (OAI12X1AS7)                             0.70     35.16 r
+  U2636/O (CLKINVX1AS7)                            0.14     35.30 f
+  U2637/O (OAI12X1AS7)                             0.33     35.63 r
+  U2641/O (AOI12X1AS7)                             0.17     35.80 f
+  ctmTdsLR_2_573/O (OAI112X1AS7)                   0.41     36.20 r
+  U2685/O (AOI12X1AS7)                             0.23     36.43 f
+  U2693/O (OAI12X1AS7)                             0.37     36.80 r
+  U2703/O (AOI12X1AS7)                             0.21     37.02 f
+  U2711/O (OAI12X1AS7)                             0.39     37.41 r
+  U2721/O (AOI12X1AS7)                             0.24     37.65 f
+  U2729/O (OAI12X1AS7)                             0.33     37.98 r
+  U2863/CO (FAX1AS7)                               0.38     38.36 r
+  U2873/CO (FAX1AS7)                               0.29     38.66 r
+  U2738/O (CLKINVX1AS7)                            0.10     38.75 f
+  U311/O (NOR2X1AS7)                               0.99     39.74 r
+  U2739/O (CLKINVX1AS7)                            0.26     40.00 f
+  U2740/O (CLKINVX1AS7)                            0.64     40.64 r
+  ctmTdsLR_1_715/OB (MUX2BX1AS7)                   0.35     40.99 f
+  U2744/O (CLKINVX1AS7)                            0.21     41.20 r
+  U2761/O (NAND2X1AS7)                             0.17     41.37 f
+  U2763/O (OAI12X1AS7)                             0.27     41.63 r
+  U2764/O (AOI12X1AS7)                             0.12     41.75 f
+  ctmTdsLR_2_942/O (OAI112X1AS7)                   0.40     42.16 r
+  U2799/O (AOI12X1AS7)                             0.23     42.38 f
+  U2808/O (OAI12X1AS7)                             0.36     42.74 r
+  U2817/O (AOI12X1AS7)                             0.22     42.96 f
+  U2826/O (OAI12X1AS7)                             0.38     43.34 r
+  U2835/O (AOI12X1AS7)                             0.22     43.56 f
+  U2844/O (OAI12X1AS7)                             0.40     43.96 r
+  U2853/O (AOI12X1AS7)                             0.24     44.20 f
+  U2862/O (OAI12X1AS7)                             0.43     44.63 r
+  ctmTdsLR_1_886/O (OAI12B2X1AS7)                  0.28     44.91 r
+  U2951/CO (FAX1AS7)                               0.33     45.24 r
+  U2875/O (CLKINVX1AS7)                            0.11     45.35 f
+  U312/O (NOR2X1AS7)                               1.28     46.62 r
+  U3010/O (AOI12X1AS7)                             0.12     46.74 f
+  U3011/O (OAI12X1AS7)                             0.26     47.00 r
+  U3090/O (CLKINVX1AS7)                            0.17     47.16 f
+  U3091/O (OAI12X1AS7)                             0.12     47.29 r
+  Result_reg_11_/D (DFFRBQX1AS7)                   0.00     47.29 r
+  data arrival time                                         47.29
+
+  clock core_clock (rise edge)                    50.00     50.00
+  clock network delay (propagated)                 1.20     51.20
+  Result_reg_11_/CK (DFFRBQX1AS7)                  0.00     51.20 r
+  library setup time                              -0.12     51.09
+  data required time                                        51.09
+  ------------------------------------------------------------------------
+  data required time                                        51.09
+  data arrival time                                        -47.29
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.80
+
+
+
+  Startpoint: B_reg_reg_13_ (rising edge-triggered flip-flop clocked by core_clock)
+  Endpoint: Result_reg_5_ (rising edge-triggered flip-flop clocked by core_clock)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: core_clock
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 1.08      1.08
+
+  B_reg_reg_13_/CK (DFFRBQX2AS7)                   0.00      1.08 r
+  B_reg_reg_13_/Q (DFFRBQX2AS7)                    0.49      1.57 f
+  HFSINV_1202_13/O (CLKINVX2AS7)                   0.22      1.79 r
+  HFSBUF_115_11/O (BUFX3AS7)                       0.30      2.09 r
+  U1205/O (NAND2X2AS7)                             0.11      2.20 f
+  U1206/O (NOR2X2AS7)                              0.34      2.54 r
+  U1207/O (NAND2X2AS7)                             0.13      2.67 f
+  U300/O (NOR2X2AS7)                               0.32      2.99 r
+  U1208/O (NAND2X2AS7)                             0.15      3.14 f
+  ctmTdsLR_2_305/O (CLKINVX2AS7)                   0.12      3.26 r
+  ctmTdsLR_1_304/O (NAND3B1X2AS7)                  0.16      3.42 f
+  U302/O (NOR2X2AS7)                               0.27      3.69 r
+  U1210/O (NAND2X2AS7)                             0.13      3.82 f
+  U1211/O (NOR2X2AS7)                              0.23      4.05 r
+  U1212/O (NAND2X2AS7)                             0.16      4.21 f
+  ctmTdsLR_3_303/O (INVX1AS7)                      0.16      4.37 r
+  ctmTdsLR_1_301/O (NAND2B1X2AS7)                  0.13      4.49 f
+  U1216/O (OAI12X2AS7)                             0.23      4.72 r
+  U1220/O (OAI12X1AS7)                             0.16      4.89 f
+  U1225/O (OAI112X2AS7)                            0.26      5.15 r
+  ctmTdsLR_1_819/O (OAI12B2X4AS7)                  0.15      5.30 f
+  U1232/O (OAI12X1AS7)                             0.24      5.54 r
+  U1238/O (AOI12X1AS7)                             0.21      5.75 f
+  U1239/O (NAND2X1AS7)                             0.24      5.99 r
+  U1240/O (NAND2X1AS7)                             0.14      6.13 f
+  U1243/O (NAND2X1AS7)                             0.15      6.28 r
+  U1253/O (NAND4X2AS7)                             0.26      6.54 f
+  U1259/O (NOR2X2AS7)                              0.25      6.78 r
+  U1260/O (XOR2X1AS7)                              0.38      7.17 f
+  ctmTdsLR_1_686/O (OAI12B2X1AS7)                  0.12      7.28 r
+  ctmTdsLR_1_778/O (OAI12B2X1AS7)                  0.17      7.46 f
+  U1267/O (NAND2X1AS7)                             0.13      7.58 r
+  U1268/O (NAND2B1X1AS7)                           0.11      7.70 f
+  ctmTdsLR_1_300/O (OAI12B2X2AS7)                  0.21      7.91 r
+  U287/O (OAI12X4AS7)                              0.15      8.06 f
+  U1284/O (INVX2AS7)                               0.26      8.32 r
+  U1285/O (NAND2X4AS7)                             0.11      8.43 f
+  U1288/O (NAND3X1AS7)                             0.21      8.64 r
+  U1295/O (AOI12X2AS7)                             0.14      8.78 f
+  U1299/O (OAI12X2AS7)                             0.19      8.96 r
+  U1307/O (NAND2X2AS7)                             0.12      9.08 f
+  ctmTdsLR_1_687/O (OAI22B2X2AS7)                  0.27      9.35 r
+  ctmTdsLR_2_821/O (AOI12B2X1AS7)                  0.67     10.02 r
+  U1982/O (NAND2X1AS7)                             0.17     10.20 f
+  U1986/O (OAI12X1AS7)                             0.44     10.64 r
+  U1987/O (NOR2X1AS7)                              0.10     10.74 f
+  U1994/O (OAI12X1AS7)                             0.34     11.08 r
+  U1998/O (AOI12X1AS7)                             0.20     11.27 f
+  ctmTdsLR_1_478/O (OAI13X1AS7)                    0.34     11.61 r
+  U2010/O (NAND2X1AS7)                             0.48     12.10 f
+  U2027/O (OAI12X1AS7)                             0.49     12.59 r
+  U2028/O (CLKINVX1AS7)                            0.18     12.77 f
+  U2029/O (OAI12X1AS7)                             0.42     13.19 r
+  U2033/O (AOI12X1AS7)                             0.15     13.34 f
+  U2070/O (OAI12X1AS7)                             0.27     13.61 r
+  U2071/O (NAND2X1AS7)                             0.53     14.14 f
+  U2087/O (OAI12X1AS7)                             0.51     14.65 r
+  U2088/O (CLKINVX1AS7)                            0.20     14.84 f
+  U2089/O (OAI12X1AS7)                             0.45     15.29 r
+  U2093/O (AOI12X1AS7)                             0.16     15.45 f
+  U2138/O (OAI12X1AS7)                             0.39     15.84 r
+  ctmTdsLR_1_854/O (AOI12X1AS7)                    0.15     15.99 f
+  ctmTdsLR_1_902/O (CLKINVX1AS7)                   0.14     16.13 r
+  ctmTdsLR_2_903/O (OAI112X2AS7)                   0.49     16.62 f
+  U2158/O (OAI12X1AS7)                             0.51     17.13 r
+  U2159/O (CLKINVX1AS7)                            0.19     17.32 f
+  U2160/O (OAI12X1AS7)                             0.44     17.76 r
+  U2164/O (AOI12X1AS7)                             0.16     17.93 f
+  U2209/O (OAI12X1AS7)                             0.39     18.32 r
+  ctmTdsLR_2_784/O (OAI12B2X1AS7)                  0.23     18.55 r
+  U2223/O (NAND2X1AS7)                             0.55     19.10 f
+  U2239/O (OAI12X1AS7)                             0.54     19.63 r
+  U2240/O (CLKINVX1AS7)                            0.21     19.84 f
+  U2241/O (OAI12X1AS7)                             0.41     20.25 r
+  U2245/O (AOI12X1AS7)                             0.18     20.43 f
+  U2288/O (OAI12X1AS7)                             0.31     20.74 r
+  ctmTdsLR_2_619/O (NAND3B1X1AS7)                  0.15     20.90 f
+  ctmTdsLR_3_620/O (OAI112X1AS7)                   0.22     21.12 r
+  U2404/CO (FAX1AS7)                               0.33     21.45 r
+  U296/O (NAND2X1AS7)                              0.66     22.11 f
+  U2311/O (OAI12X1AS7)                             0.64     22.75 r
+  U2312/O (CLKINVX1AS7)                            0.20     22.96 f
+  U2325/O (OAI12X1AS7)                             0.34     23.29 r
+  U2329/O (AOI12X1AS7)                             0.21     23.50 f
+  U2370/O (OAI12X1AS7)                             0.37     23.87 r
+  U2381/O (AOI12X1AS7)                             0.21     24.08 f
+  U2391/O (OAI12X1AS7)                             0.43     24.52 r
+  ctmTdsLR_1_627/O (OAI12B2X1AS7)                  0.28     24.80 r
+  U2507/CO (FAX1AS7)                               0.29     25.09 r
+  U2406/O (NAND2X1AS7)                             0.70     25.79 f
+  U2421/O (OAI12X1AS7)                             0.69     26.48 r
+  U2422/O (CLKINVX1AS7)                            0.20     26.68 f
+  U2423/O (OAI12X1AS7)                             0.38     27.06 r
+  U2427/O (AOI12X1AS7)                             0.17     27.24 f
+  U2471/O (OAI12X1AS7)                             0.36     27.59 r
+  U2482/O (AOI12X1AS7)                             0.22     27.81 f
+  U2490/O (OAI12X1AS7)                             0.37     28.18 r
+  ctmTdsLR_1_635/O (OAI12B2X1AS7)                  0.27     28.46 r
+  U2613/CO (FAX1AS7)                               0.35     28.81 r
+  U2619/CO (FAX1AS7)                               0.30     29.11 r
+  U297/O (NAND2X1AS7)                              0.70     29.81 f
+  U2510/O (OAI12X1AS7)                             0.63     30.44 r
+  U2511/O (CLKINVX1AS7)                            0.21     30.65 f
+  U2525/O (OAI12X1AS7)                             0.35     31.01 r
+  U2529/O (AOI12X1AS7)                             0.16     31.17 f
+  ctmTdsLR_2_469/O (OAI112X1AS7)                   0.39     31.56 r
+  U2574/O (AOI12X1AS7)                             0.22     31.78 f
+  U2584/O (OAI12X1AS7)                             0.36     32.14 r
+  U2593/O (AOI12X1AS7)                             0.21     32.35 f
+  U2602/O (OAI12X1AS7)                             0.40     32.75 r
+  U2611/O (AOI12X1AS7)                             0.23     32.98 f
+  U2618/O (OAI12X1AS7)                             0.41     33.39 r
+  U2736/CO (FAX1AS7)                               0.32     33.71 r
+  U308/O (NAND2X1AS7)                              0.74     34.45 f
+  U2635/O (OAI12X1AS7)                             0.70     35.16 r
+  U2636/O (CLKINVX1AS7)                            0.14     35.30 f
+  U2637/O (OAI12X1AS7)                             0.33     35.63 r
+  U2641/O (AOI12X1AS7)                             0.17     35.80 f
+  ctmTdsLR_2_573/O (OAI112X1AS7)                   0.41     36.20 r
+  U2685/O (AOI12X1AS7)                             0.23     36.43 f
+  U2693/O (OAI12X1AS7)                             0.37     36.80 r
+  U2703/O (AOI12X1AS7)                             0.21     37.02 f
+  U2711/O (OAI12X1AS7)                             0.39     37.41 r
+  U2721/O (AOI12X1AS7)                             0.24     37.65 f
+  U2729/O (OAI12X1AS7)                             0.33     37.98 r
+  U2863/CO (FAX1AS7)                               0.38     38.36 r
+  U2873/CO (FAX1AS7)                               0.29     38.66 r
+  U2738/O (CLKINVX1AS7)                            0.10     38.75 f
+  U311/O (NOR2X1AS7)                               0.99     39.74 r
+  U2739/O (CLKINVX1AS7)                            0.26     40.00 f
+  U2740/O (CLKINVX1AS7)                            0.64     40.64 r
+  ctmTdsLR_1_715/OB (MUX2BX1AS7)                   0.35     40.99 f
+  U2744/O (CLKINVX1AS7)                            0.21     41.20 r
+  U2761/O (NAND2X1AS7)                             0.17     41.37 f
+  U2763/O (OAI12X1AS7)                             0.27     41.63 r
+  U2764/O (AOI12X1AS7)                             0.12     41.75 f
+  ctmTdsLR_2_942/O (OAI112X1AS7)                   0.40     42.16 r
+  U2799/O (AOI12X1AS7)                             0.23     42.38 f
+  U2808/O (OAI12X1AS7)                             0.36     42.74 r
+  U2817/O (AOI12X1AS7)                             0.22     42.96 f
+  U2826/O (OAI12X1AS7)                             0.38     43.34 r
+  U2835/O (AOI12X1AS7)                             0.22     43.56 f
+  U2844/O (OAI12X1AS7)                             0.40     43.96 r
+  U2853/O (AOI12X1AS7)                             0.24     44.20 f
+  U2862/O (OAI12X1AS7)                             0.43     44.63 r
+  ctmTdsLR_1_886/O (OAI12B2X1AS7)                  0.28     44.91 r
+  U2951/CO (FAX1AS7)                               0.33     45.24 r
+  U2875/O (CLKINVX1AS7)                            0.11     45.35 f
+  U312/O (NOR2X1AS7)                               1.28     46.62 r
+  U2968/O (AOI12X1AS7)                             0.13     46.76 f
+  U2969/O (OAI12X1AS7)                             0.29     47.05 r
+  U3079/O (NAND2B1X1AS7)                           0.17     47.23 r
+  Result_reg_5_/D (DFFRBQX1AS7)                    0.00     47.23 r
+  data arrival time                                         47.23
+
+  clock core_clock (rise edge)                    50.00     50.00
+  clock network delay (propagated)                 1.18     51.18
+  Result_reg_5_/CK (DFFRBQX1AS7)                   0.00     51.18 r
+  library setup time                              -0.11     51.07
+  data required time                                        51.07
+  ------------------------------------------------------------------------
+  data required time                                        51.07
+  data arrival time                                        -47.23
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.84
+
+
+
+  Startpoint: B_reg_reg_13_ (rising edge-triggered flip-flop clocked by core_clock)
+  Endpoint: Result_reg_12_ (rising edge-triggered flip-flop clocked by core_clock)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: core_clock
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 1.08      1.08
+
+  B_reg_reg_13_/CK (DFFRBQX2AS7)                   0.00      1.08 r
+  B_reg_reg_13_/Q (DFFRBQX2AS7)                    0.49      1.57 f
+  HFSINV_1202_13/O (CLKINVX2AS7)                   0.22      1.79 r
+  HFSBUF_115_11/O (BUFX3AS7)                       0.30      2.09 r
+  U1205/O (NAND2X2AS7)                             0.11      2.20 f
+  U1206/O (NOR2X2AS7)                              0.34      2.54 r
+  U1207/O (NAND2X2AS7)                             0.13      2.67 f
+  U300/O (NOR2X2AS7)                               0.32      2.99 r
+  U1208/O (NAND2X2AS7)                             0.15      3.14 f
+  ctmTdsLR_2_305/O (CLKINVX2AS7)                   0.12      3.26 r
+  ctmTdsLR_1_304/O (NAND3B1X2AS7)                  0.16      3.42 f
+  U302/O (NOR2X2AS7)                               0.27      3.69 r
+  U1210/O (NAND2X2AS7)                             0.13      3.82 f
+  U1211/O (NOR2X2AS7)                              0.23      4.05 r
+  U1212/O (NAND2X2AS7)                             0.16      4.21 f
+  ctmTdsLR_3_303/O (INVX1AS7)                      0.16      4.37 r
+  ctmTdsLR_1_301/O (NAND2B1X2AS7)                  0.13      4.49 f
+  U1216/O (OAI12X2AS7)                             0.23      4.72 r
+  U1220/O (OAI12X1AS7)                             0.16      4.89 f
+  U1225/O (OAI112X2AS7)                            0.26      5.15 r
+  ctmTdsLR_1_819/O (OAI12B2X4AS7)                  0.15      5.30 f
+  U1232/O (OAI12X1AS7)                             0.24      5.54 r
+  U1238/O (AOI12X1AS7)                             0.21      5.75 f
+  U1239/O (NAND2X1AS7)                             0.24      5.99 r
+  U1240/O (NAND2X1AS7)                             0.14      6.13 f
+  U1243/O (NAND2X1AS7)                             0.15      6.28 r
+  U1253/O (NAND4X2AS7)                             0.26      6.54 f
+  U1259/O (NOR2X2AS7)                              0.25      6.78 r
+  U1260/O (XOR2X1AS7)                              0.38      7.17 f
+  ctmTdsLR_1_686/O (OAI12B2X1AS7)                  0.12      7.28 r
+  ctmTdsLR_1_778/O (OAI12B2X1AS7)                  0.17      7.46 f
+  U1267/O (NAND2X1AS7)                             0.13      7.58 r
+  U1268/O (NAND2B1X1AS7)                           0.11      7.70 f
+  ctmTdsLR_1_300/O (OAI12B2X2AS7)                  0.21      7.91 r
+  U287/O (OAI12X4AS7)                              0.15      8.06 f
+  U1284/O (INVX2AS7)                               0.26      8.32 r
+  U1285/O (NAND2X4AS7)                             0.11      8.43 f
+  U1288/O (NAND3X1AS7)                             0.21      8.64 r
+  U1295/O (AOI12X2AS7)                             0.14      8.78 f
+  U1299/O (OAI12X2AS7)                             0.19      8.96 r
+  U1307/O (NAND2X2AS7)                             0.12      9.08 f
+  ctmTdsLR_1_687/O (OAI22B2X2AS7)                  0.27      9.35 r
+  ctmTdsLR_2_821/O (AOI12B2X1AS7)                  0.67     10.02 r
+  U1982/O (NAND2X1AS7)                             0.17     10.20 f
+  U1986/O (OAI12X1AS7)                             0.44     10.64 r
+  U1987/O (NOR2X1AS7)                              0.10     10.74 f
+  U1994/O (OAI12X1AS7)                             0.34     11.08 r
+  U1998/O (AOI12X1AS7)                             0.20     11.27 f
+  ctmTdsLR_1_478/O (OAI13X1AS7)                    0.34     11.61 r
+  U2010/O (NAND2X1AS7)                             0.48     12.10 f
+  U2027/O (OAI12X1AS7)                             0.49     12.59 r
+  U2028/O (CLKINVX1AS7)                            0.18     12.77 f
+  U2029/O (OAI12X1AS7)                             0.42     13.19 r
+  U2033/O (AOI12X1AS7)                             0.15     13.34 f
+  U2070/O (OAI12X1AS7)                             0.27     13.61 r
+  U2071/O (NAND2X1AS7)                             0.53     14.14 f
+  U2087/O (OAI12X1AS7)                             0.51     14.65 r
+  U2088/O (CLKINVX1AS7)                            0.20     14.84 f
+  U2089/O (OAI12X1AS7)                             0.45     15.29 r
+  U2093/O (AOI12X1AS7)                             0.16     15.45 f
+  U2138/O (OAI12X1AS7)                             0.39     15.84 r
+  ctmTdsLR_1_854/O (AOI12X1AS7)                    0.15     15.99 f
+  ctmTdsLR_1_902/O (CLKINVX1AS7)                   0.14     16.13 r
+  ctmTdsLR_2_903/O (OAI112X2AS7)                   0.49     16.62 f
+  U2158/O (OAI12X1AS7)                             0.51     17.13 r
+  U2159/O (CLKINVX1AS7)                            0.19     17.32 f
+  U2160/O (OAI12X1AS7)                             0.44     17.76 r
+  U2164/O (AOI12X1AS7)                             0.16     17.93 f
+  U2209/O (OAI12X1AS7)                             0.39     18.32 r
+  ctmTdsLR_2_784/O (OAI12B2X1AS7)                  0.23     18.55 r
+  U2223/O (NAND2X1AS7)                             0.55     19.10 f
+  U2239/O (OAI12X1AS7)                             0.54     19.63 r
+  U2240/O (CLKINVX1AS7)                            0.21     19.84 f
+  U2241/O (OAI12X1AS7)                             0.41     20.25 r
+  U2245/O (AOI12X1AS7)                             0.18     20.43 f
+  U2288/O (OAI12X1AS7)                             0.31     20.74 r
+  ctmTdsLR_2_619/O (NAND3B1X1AS7)                  0.15     20.90 f
+  ctmTdsLR_3_620/O (OAI112X1AS7)                   0.22     21.12 r
+  U2404/CO (FAX1AS7)                               0.33     21.45 r
+  U296/O (NAND2X1AS7)                              0.66     22.11 f
+  U2311/O (OAI12X1AS7)                             0.64     22.75 r
+  U2312/O (CLKINVX1AS7)                            0.20     22.96 f
+  U2325/O (OAI12X1AS7)                             0.34     23.29 r
+  U2329/O (AOI12X1AS7)                             0.21     23.50 f
+  U2370/O (OAI12X1AS7)                             0.37     23.87 r
+  U2381/O (AOI12X1AS7)                             0.21     24.08 f
+  U2391/O (OAI12X1AS7)                             0.43     24.52 r
+  ctmTdsLR_1_627/O (OAI12B2X1AS7)                  0.28     24.80 r
+  U2507/CO (FAX1AS7)                               0.29     25.09 r
+  U2406/O (NAND2X1AS7)                             0.70     25.79 f
+  U2421/O (OAI12X1AS7)                             0.69     26.48 r
+  U2422/O (CLKINVX1AS7)                            0.20     26.68 f
+  U2423/O (OAI12X1AS7)                             0.38     27.06 r
+  U2427/O (AOI12X1AS7)                             0.17     27.24 f
+  U2471/O (OAI12X1AS7)                             0.36     27.59 r
+  U2482/O (AOI12X1AS7)                             0.22     27.81 f
+  U2490/O (OAI12X1AS7)                             0.37     28.18 r
+  ctmTdsLR_1_635/O (OAI12B2X1AS7)                  0.27     28.46 r
+  U2613/CO (FAX1AS7)                               0.35     28.81 r
+  U2619/CO (FAX1AS7)                               0.30     29.11 r
+  U297/O (NAND2X1AS7)                              0.70     29.81 f
+  U2510/O (OAI12X1AS7)                             0.63     30.44 r
+  U2511/O (CLKINVX1AS7)                            0.21     30.65 f
+  U2525/O (OAI12X1AS7)                             0.35     31.01 r
+  U2529/O (AOI12X1AS7)                             0.16     31.17 f
+  ctmTdsLR_2_469/O (OAI112X1AS7)                   0.39     31.56 r
+  U2574/O (AOI12X1AS7)                             0.22     31.78 f
+  U2584/O (OAI12X1AS7)                             0.36     32.14 r
+  U2593/O (AOI12X1AS7)                             0.21     32.35 f
+  U2602/O (OAI12X1AS7)                             0.40     32.75 r
+  U2611/O (AOI12X1AS7)                             0.23     32.98 f
+  U2618/O (OAI12X1AS7)                             0.41     33.39 r
+  U2736/CO (FAX1AS7)                               0.32     33.71 r
+  U308/O (NAND2X1AS7)                              0.74     34.45 f
+  U2635/O (OAI12X1AS7)                             0.70     35.16 r
+  U2636/O (CLKINVX1AS7)                            0.14     35.30 f
+  U2637/O (OAI12X1AS7)                             0.33     35.63 r
+  U2641/O (AOI12X1AS7)                             0.17     35.80 f
+  ctmTdsLR_2_573/O (OAI112X1AS7)                   0.41     36.20 r
+  U2685/O (AOI12X1AS7)                             0.23     36.43 f
+  U2693/O (OAI12X1AS7)                             0.37     36.80 r
+  U2703/O (AOI12X1AS7)                             0.21     37.02 f
+  U2711/O (OAI12X1AS7)                             0.39     37.41 r
+  U2721/O (AOI12X1AS7)                             0.24     37.65 f
+  U2729/O (OAI12X1AS7)                             0.33     37.98 r
+  U2863/CO (FAX1AS7)                               0.38     38.36 r
+  U2873/CO (FAX1AS7)                               0.29     38.66 r
+  U2738/O (CLKINVX1AS7)                            0.10     38.75 f
+  U311/O (NOR2X1AS7)                               0.99     39.74 r
+  U2739/O (CLKINVX1AS7)                            0.26     40.00 f
+  U2740/O (CLKINVX1AS7)                            0.64     40.64 r
+  ctmTdsLR_1_715/OB (MUX2BX1AS7)                   0.35     40.99 f
+  U2744/O (CLKINVX1AS7)                            0.21     41.20 r
+  U2761/O (NAND2X1AS7)                             0.17     41.37 f
+  U2763/O (OAI12X1AS7)                             0.27     41.63 r
+  U2764/O (AOI12X1AS7)                             0.12     41.75 f
+  ctmTdsLR_2_942/O (OAI112X1AS7)                   0.40     42.16 r
+  U2799/O (AOI12X1AS7)                             0.23     42.38 f
+  U2808/O (OAI12X1AS7)                             0.36     42.74 r
+  U2817/O (AOI12X1AS7)                             0.22     42.96 f
+  U2826/O (OAI12X1AS7)                             0.38     43.34 r
+  U2835/O (AOI12X1AS7)                             0.22     43.56 f
+  U2844/O (OAI12X1AS7)                             0.40     43.96 r
+  U2853/O (AOI12X1AS7)                             0.24     44.20 f
+  U2862/O (OAI12X1AS7)                             0.43     44.63 r
+  ctmTdsLR_1_886/O (OAI12B2X1AS7)                  0.28     44.91 r
+  U2951/CO (FAX1AS7)                               0.33     45.24 r
+  U2875/O (CLKINVX1AS7)                            0.11     45.35 f
+  U312/O (NOR2X1AS7)                               1.28     46.62 r
+  U3000/O (AOI112X1AS7)                            0.15     46.77 f
+  U3001/O (OAI12X1AS7)                             0.27     47.04 r
+  U3093/O (NAND2B1X1AS7)                           0.18     47.21 r
+  Result_reg_12_/D (DFFRBQX1AS7)                   0.00     47.21 r
+  data arrival time                                         47.21
+
+  clock core_clock (rise edge)                    50.00     50.00
+  clock network delay (propagated)                 1.28     51.28
+  Result_reg_12_/CK (DFFRBQX1AS7)                  0.00     51.28 r
+  library setup time                              -0.13     51.16
+  data required time                                        51.16
+  ------------------------------------------------------------------------
+  data required time                                        51.16
+  data arrival time                                        -47.21
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.94
+
+
+
+  Startpoint: B_reg_reg_13_ (rising edge-triggered flip-flop clocked by core_clock)
+  Endpoint: Result_reg_2_ (rising edge-triggered flip-flop clocked by core_clock)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: core_clock
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 1.08      1.08
+
+  B_reg_reg_13_/CK (DFFRBQX2AS7)                   0.00      1.08 r
+  B_reg_reg_13_/Q (DFFRBQX2AS7)                    0.49      1.57 f
+  HFSINV_1202_13/O (CLKINVX2AS7)                   0.22      1.79 r
+  HFSBUF_115_11/O (BUFX3AS7)                       0.30      2.09 r
+  U1205/O (NAND2X2AS7)                             0.11      2.20 f
+  U1206/O (NOR2X2AS7)                              0.34      2.54 r
+  U1207/O (NAND2X2AS7)                             0.13      2.67 f
+  U300/O (NOR2X2AS7)                               0.32      2.99 r
+  U1208/O (NAND2X2AS7)                             0.15      3.14 f
+  ctmTdsLR_2_305/O (CLKINVX2AS7)                   0.12      3.26 r
+  ctmTdsLR_1_304/O (NAND3B1X2AS7)                  0.16      3.42 f
+  U302/O (NOR2X2AS7)                               0.27      3.69 r
+  U1210/O (NAND2X2AS7)                             0.13      3.82 f
+  U1211/O (NOR2X2AS7)                              0.23      4.05 r
+  U1212/O (NAND2X2AS7)                             0.16      4.21 f
+  ctmTdsLR_3_303/O (INVX1AS7)                      0.16      4.37 r
+  ctmTdsLR_1_301/O (NAND2B1X2AS7)                  0.13      4.49 f
+  U1216/O (OAI12X2AS7)                             0.23      4.72 r
+  U1220/O (OAI12X1AS7)                             0.16      4.89 f
+  U1225/O (OAI112X2AS7)                            0.26      5.15 r
+  ctmTdsLR_1_819/O (OAI12B2X4AS7)                  0.15      5.30 f
+  U1232/O (OAI12X1AS7)                             0.24      5.54 r
+  U1238/O (AOI12X1AS7)                             0.21      5.75 f
+  U1239/O (NAND2X1AS7)                             0.24      5.99 r
+  U1240/O (NAND2X1AS7)                             0.14      6.13 f
+  U1243/O (NAND2X1AS7)                             0.15      6.28 r
+  U1253/O (NAND4X2AS7)                             0.26      6.54 f
+  U1259/O (NOR2X2AS7)                              0.25      6.78 r
+  U1260/O (XOR2X1AS7)                              0.38      7.17 f
+  ctmTdsLR_1_686/O (OAI12B2X1AS7)                  0.12      7.28 r
+  ctmTdsLR_1_778/O (OAI12B2X1AS7)                  0.17      7.46 f
+  U1267/O (NAND2X1AS7)                             0.13      7.58 r
+  U1268/O (NAND2B1X1AS7)                           0.11      7.70 f
+  ctmTdsLR_1_300/O (OAI12B2X2AS7)                  0.21      7.91 r
+  U287/O (OAI12X4AS7)                              0.15      8.06 f
+  U1284/O (INVX2AS7)                               0.26      8.32 r
+  U1285/O (NAND2X4AS7)                             0.11      8.43 f
+  U1288/O (NAND3X1AS7)                             0.21      8.64 r
+  U1295/O (AOI12X2AS7)                             0.14      8.78 f
+  U1299/O (OAI12X2AS7)                             0.19      8.96 r
+  U1307/O (NAND2X2AS7)                             0.12      9.08 f
+  ctmTdsLR_1_687/O (OAI22B2X2AS7)                  0.27      9.35 r
+  ctmTdsLR_2_821/O (AOI12B2X1AS7)                  0.67     10.02 r
+  U1982/O (NAND2X1AS7)                             0.17     10.20 f
+  U1986/O (OAI12X1AS7)                             0.44     10.64 r
+  U1987/O (NOR2X1AS7)                              0.10     10.74 f
+  U1994/O (OAI12X1AS7)                             0.34     11.08 r
+  U1998/O (AOI12X1AS7)                             0.20     11.27 f
+  ctmTdsLR_1_478/O (OAI13X1AS7)                    0.34     11.61 r
+  U2010/O (NAND2X1AS7)                             0.48     12.10 f
+  U2027/O (OAI12X1AS7)                             0.49     12.59 r
+  U2028/O (CLKINVX1AS7)                            0.18     12.77 f
+  U2029/O (OAI12X1AS7)                             0.42     13.19 r
+  U2033/O (AOI12X1AS7)                             0.15     13.34 f
+  U2070/O (OAI12X1AS7)                             0.27     13.61 r
+  U2071/O (NAND2X1AS7)                             0.53     14.14 f
+  U2087/O (OAI12X1AS7)                             0.51     14.65 r
+  U2088/O (CLKINVX1AS7)                            0.20     14.84 f
+  U2089/O (OAI12X1AS7)                             0.45     15.29 r
+  U2093/O (AOI12X1AS7)                             0.16     15.45 f
+  U2138/O (OAI12X1AS7)                             0.39     15.84 r
+  ctmTdsLR_1_854/O (AOI12X1AS7)                    0.15     15.99 f
+  ctmTdsLR_1_902/O (CLKINVX1AS7)                   0.14     16.13 r
+  ctmTdsLR_2_903/O (OAI112X2AS7)                   0.49     16.62 f
+  U2158/O (OAI12X1AS7)                             0.51     17.13 r
+  U2159/O (CLKINVX1AS7)                            0.19     17.32 f
+  U2160/O (OAI12X1AS7)                             0.44     17.76 r
+  U2164/O (AOI12X1AS7)                             0.16     17.93 f
+  U2209/O (OAI12X1AS7)                             0.39     18.32 r
+  ctmTdsLR_2_784/O (OAI12B2X1AS7)                  0.23     18.55 r
+  U2223/O (NAND2X1AS7)                             0.55     19.10 f
+  U2239/O (OAI12X1AS7)                             0.54     19.63 r
+  U2240/O (CLKINVX1AS7)                            0.21     19.84 f
+  U2241/O (OAI12X1AS7)                             0.41     20.25 r
+  U2245/O (AOI12X1AS7)                             0.18     20.43 f
+  U2288/O (OAI12X1AS7)                             0.31     20.74 r
+  ctmTdsLR_2_619/O (NAND3B1X1AS7)                  0.15     20.90 f
+  ctmTdsLR_3_620/O (OAI112X1AS7)                   0.22     21.12 r
+  U2404/CO (FAX1AS7)                               0.33     21.45 r
+  U296/O (NAND2X1AS7)                              0.66     22.11 f
+  U2311/O (OAI12X1AS7)                             0.64     22.75 r
+  U2312/O (CLKINVX1AS7)                            0.20     22.96 f
+  U2325/O (OAI12X1AS7)                             0.34     23.29 r
+  U2329/O (AOI12X1AS7)                             0.21     23.50 f
+  U2370/O (OAI12X1AS7)                             0.37     23.87 r
+  U2381/O (AOI12X1AS7)                             0.21     24.08 f
+  U2391/O (OAI12X1AS7)                             0.43     24.52 r
+  ctmTdsLR_1_627/O (OAI12B2X1AS7)                  0.28     24.80 r
+  U2507/CO (FAX1AS7)                               0.29     25.09 r
+  U2406/O (NAND2X1AS7)                             0.70     25.79 f
+  U2421/O (OAI12X1AS7)                             0.69     26.48 r
+  U2422/O (CLKINVX1AS7)                            0.20     26.68 f
+  U2423/O (OAI12X1AS7)                             0.38     27.06 r
+  U2427/O (AOI12X1AS7)                             0.17     27.24 f
+  U2471/O (OAI12X1AS7)                             0.36     27.59 r
+  U2482/O (AOI12X1AS7)                             0.22     27.81 f
+  U2490/O (OAI12X1AS7)                             0.37     28.18 r
+  ctmTdsLR_1_635/O (OAI12B2X1AS7)                  0.27     28.46 r
+  U2613/CO (FAX1AS7)                               0.35     28.81 r
+  U2619/CO (FAX1AS7)                               0.30     29.11 r
+  U297/O (NAND2X1AS7)                              0.70     29.81 f
+  U2510/O (OAI12X1AS7)                             0.63     30.44 r
+  U2511/O (CLKINVX1AS7)                            0.21     30.65 f
+  U2525/O (OAI12X1AS7)                             0.35     31.01 r
+  U2529/O (AOI12X1AS7)                             0.16     31.17 f
+  ctmTdsLR_2_469/O (OAI112X1AS7)                   0.39     31.56 r
+  U2574/O (AOI12X1AS7)                             0.22     31.78 f
+  U2584/O (OAI12X1AS7)                             0.36     32.14 r
+  U2593/O (AOI12X1AS7)                             0.21     32.35 f
+  U2602/O (OAI12X1AS7)                             0.40     32.75 r
+  U2611/O (AOI12X1AS7)                             0.23     32.98 f
+  U2618/O (OAI12X1AS7)                             0.41     33.39 r
+  U2736/CO (FAX1AS7)                               0.32     33.71 r
+  U308/O (NAND2X1AS7)                              0.74     34.45 f
+  U2635/O (OAI12X1AS7)                             0.70     35.16 r
+  U2636/O (CLKINVX1AS7)                            0.14     35.30 f
+  U2637/O (OAI12X1AS7)                             0.33     35.63 r
+  U2641/O (AOI12X1AS7)                             0.17     35.80 f
+  ctmTdsLR_2_573/O (OAI112X1AS7)                   0.41     36.20 r
+  U2685/O (AOI12X1AS7)                             0.23     36.43 f
+  U2693/O (OAI12X1AS7)                             0.37     36.80 r
+  U2703/O (AOI12X1AS7)                             0.21     37.02 f
+  U2711/O (OAI12X1AS7)                             0.39     37.41 r
+  U2721/O (AOI12X1AS7)                             0.24     37.65 f
+  U2729/O (OAI12X1AS7)                             0.33     37.98 r
+  U2863/CO (FAX1AS7)                               0.38     38.36 r
+  U2873/CO (FAX1AS7)                               0.29     38.66 r
+  U2738/O (CLKINVX1AS7)                            0.10     38.75 f
+  U311/O (NOR2X1AS7)                               0.99     39.74 r
+  U2739/O (CLKINVX1AS7)                            0.26     40.00 f
+  U2740/O (CLKINVX1AS7)                            0.64     40.64 r
+  ctmTdsLR_1_715/OB (MUX2BX1AS7)                   0.35     40.99 f
+  U2744/O (CLKINVX1AS7)                            0.21     41.20 r
+  U2761/O (NAND2X1AS7)                             0.17     41.37 f
+  U2763/O (OAI12X1AS7)                             0.27     41.63 r
+  U2764/O (AOI12X1AS7)                             0.12     41.75 f
+  ctmTdsLR_2_942/O (OAI112X1AS7)                   0.40     42.16 r
+  U2799/O (AOI12X1AS7)                             0.23     42.38 f
+  U2808/O (OAI12X1AS7)                             0.36     42.74 r
+  U2817/O (AOI12X1AS7)                             0.22     42.96 f
+  U2826/O (OAI12X1AS7)                             0.38     43.34 r
+  U2835/O (AOI12X1AS7)                             0.22     43.56 f
+  U2844/O (OAI12X1AS7)                             0.40     43.96 r
+  U2853/O (AOI12X1AS7)                             0.24     44.20 f
+  U2862/O (OAI12X1AS7)                             0.43     44.63 r
+  ctmTdsLR_1_886/O (OAI12B2X1AS7)                  0.28     44.91 r
+  U2951/CO (FAX1AS7)                               0.33     45.24 r
+  U2875/O (CLKINVX1AS7)                            0.11     45.35 f
+  U312/O (NOR2X1AS7)                               1.28     46.62 r
+  U2918/O (AOI12X1AS7)                             0.13     46.75 f
+  U2920/O (OAI112X1AS7)                            0.32     47.07 r
+  U3073/O (NAND2B1X1AS7)                           0.19     47.26 r
+  Result_reg_2_/D (DFFRBQX1AS7)                    0.00     47.26 r
+  data arrival time                                         47.26
+
+  clock core_clock (rise edge)                    50.00     50.00
+  clock network delay (propagated)                 1.34     51.34
+  Result_reg_2_/CK (DFFRBQX1AS7)                   0.00     51.34 r
+  library setup time                              -0.13     51.21
+  data required time                                        51.21
+  ------------------------------------------------------------------------
+  data required time                                        51.21
+  data arrival time                                        -47.26
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.95
+
+
+
+  Startpoint: B_reg_reg_13_ (rising edge-triggered flip-flop clocked by core_clock)
+  Endpoint: Result_reg_3_ (rising edge-triggered flip-flop clocked by core_clock)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: core_clock
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 1.08      1.08
+
+  B_reg_reg_13_/CK (DFFRBQX2AS7)                   0.00      1.08 r
+  B_reg_reg_13_/Q (DFFRBQX2AS7)                    0.49      1.57 f
+  HFSINV_1202_13/O (CLKINVX2AS7)                   0.22      1.79 r
+  HFSBUF_115_11/O (BUFX3AS7)                       0.30      2.09 r
+  U1205/O (NAND2X2AS7)                             0.11      2.20 f
+  U1206/O (NOR2X2AS7)                              0.34      2.54 r
+  U1207/O (NAND2X2AS7)                             0.13      2.67 f
+  U300/O (NOR2X2AS7)                               0.32      2.99 r
+  U1208/O (NAND2X2AS7)                             0.15      3.14 f
+  ctmTdsLR_2_305/O (CLKINVX2AS7)                   0.12      3.26 r
+  ctmTdsLR_1_304/O (NAND3B1X2AS7)                  0.16      3.42 f
+  U302/O (NOR2X2AS7)                               0.27      3.69 r
+  U1210/O (NAND2X2AS7)                             0.13      3.82 f
+  U1211/O (NOR2X2AS7)                              0.23      4.05 r
+  U1212/O (NAND2X2AS7)                             0.16      4.21 f
+  ctmTdsLR_3_303/O (INVX1AS7)                      0.16      4.37 r
+  ctmTdsLR_1_301/O (NAND2B1X2AS7)                  0.13      4.49 f
+  U1216/O (OAI12X2AS7)                             0.23      4.72 r
+  U1220/O (OAI12X1AS7)                             0.16      4.89 f
+  U1225/O (OAI112X2AS7)                            0.26      5.15 r
+  ctmTdsLR_1_819/O (OAI12B2X4AS7)                  0.15      5.30 f
+  U1232/O (OAI12X1AS7)                             0.24      5.54 r
+  U1238/O (AOI12X1AS7)                             0.21      5.75 f
+  U1239/O (NAND2X1AS7)                             0.24      5.99 r
+  U1240/O (NAND2X1AS7)                             0.14      6.13 f
+  U1243/O (NAND2X1AS7)                             0.15      6.28 r
+  U1253/O (NAND4X2AS7)                             0.26      6.54 f
+  U1259/O (NOR2X2AS7)                              0.25      6.78 r
+  U1260/O (XOR2X1AS7)                              0.38      7.17 f
+  ctmTdsLR_1_686/O (OAI12B2X1AS7)                  0.12      7.28 r
+  ctmTdsLR_1_778/O (OAI12B2X1AS7)                  0.17      7.46 f
+  U1267/O (NAND2X1AS7)                             0.13      7.58 r
+  U1268/O (NAND2B1X1AS7)                           0.11      7.70 f
+  ctmTdsLR_1_300/O (OAI12B2X2AS7)                  0.21      7.91 r
+  U287/O (OAI12X4AS7)                              0.15      8.06 f
+  U1284/O (INVX2AS7)                               0.26      8.32 r
+  U1285/O (NAND2X4AS7)                             0.11      8.43 f
+  U1288/O (NAND3X1AS7)                             0.21      8.64 r
+  U1295/O (AOI12X2AS7)                             0.14      8.78 f
+  U1299/O (OAI12X2AS7)                             0.19      8.96 r
+  U1307/O (NAND2X2AS7)                             0.12      9.08 f
+  ctmTdsLR_1_687/O (OAI22B2X2AS7)                  0.27      9.35 r
+  ctmTdsLR_2_821/O (AOI12B2X1AS7)                  0.67     10.02 r
+  U1982/O (NAND2X1AS7)                             0.17     10.20 f
+  U1986/O (OAI12X1AS7)                             0.44     10.64 r
+  U1987/O (NOR2X1AS7)                              0.10     10.74 f
+  U1994/O (OAI12X1AS7)                             0.34     11.08 r
+  U1998/O (AOI12X1AS7)                             0.20     11.27 f
+  ctmTdsLR_1_478/O (OAI13X1AS7)                    0.34     11.61 r
+  U2010/O (NAND2X1AS7)                             0.48     12.10 f
+  U2027/O (OAI12X1AS7)                             0.49     12.59 r
+  U2028/O (CLKINVX1AS7)                            0.18     12.77 f
+  U2029/O (OAI12X1AS7)                             0.42     13.19 r
+  U2033/O (AOI12X1AS7)                             0.15     13.34 f
+  U2070/O (OAI12X1AS7)                             0.27     13.61 r
+  U2071/O (NAND2X1AS7)                             0.53     14.14 f
+  U2087/O (OAI12X1AS7)                             0.51     14.65 r
+  U2088/O (CLKINVX1AS7)                            0.20     14.84 f
+  U2089/O (OAI12X1AS7)                             0.45     15.29 r
+  U2093/O (AOI12X1AS7)                             0.16     15.45 f
+  U2138/O (OAI12X1AS7)                             0.39     15.84 r
+  ctmTdsLR_1_854/O (AOI12X1AS7)                    0.15     15.99 f
+  ctmTdsLR_1_902/O (CLKINVX1AS7)                   0.14     16.13 r
+  ctmTdsLR_2_903/O (OAI112X2AS7)                   0.49     16.62 f
+  U2158/O (OAI12X1AS7)                             0.51     17.13 r
+  U2159/O (CLKINVX1AS7)                            0.19     17.32 f
+  U2160/O (OAI12X1AS7)                             0.44     17.76 r
+  U2164/O (AOI12X1AS7)                             0.16     17.93 f
+  U2209/O (OAI12X1AS7)                             0.39     18.32 r
+  ctmTdsLR_2_784/O (OAI12B2X1AS7)                  0.23     18.55 r
+  U2223/O (NAND2X1AS7)                             0.55     19.10 f
+  U2239/O (OAI12X1AS7)                             0.54     19.63 r
+  U2240/O (CLKINVX1AS7)                            0.21     19.84 f
+  U2241/O (OAI12X1AS7)                             0.41     20.25 r
+  U2245/O (AOI12X1AS7)                             0.18     20.43 f
+  U2288/O (OAI12X1AS7)                             0.31     20.74 r
+  ctmTdsLR_2_619/O (NAND3B1X1AS7)                  0.15     20.90 f
+  ctmTdsLR_3_620/O (OAI112X1AS7)                   0.22     21.12 r
+  U2404/CO (FAX1AS7)                               0.33     21.45 r
+  U296/O (NAND2X1AS7)                              0.66     22.11 f
+  U2311/O (OAI12X1AS7)                             0.64     22.75 r
+  U2312/O (CLKINVX1AS7)                            0.20     22.96 f
+  U2325/O (OAI12X1AS7)                             0.34     23.29 r
+  U2329/O (AOI12X1AS7)                             0.21     23.50 f
+  U2370/O (OAI12X1AS7)                             0.37     23.87 r
+  U2381/O (AOI12X1AS7)                             0.21     24.08 f
+  U2391/O (OAI12X1AS7)                             0.43     24.52 r
+  ctmTdsLR_1_627/O (OAI12B2X1AS7)                  0.28     24.80 r
+  U2507/CO (FAX1AS7)                               0.29     25.09 r
+  U2406/O (NAND2X1AS7)                             0.70     25.79 f
+  U2421/O (OAI12X1AS7)                             0.69     26.48 r
+  U2422/O (CLKINVX1AS7)                            0.20     26.68 f
+  U2423/O (OAI12X1AS7)                             0.38     27.06 r
+  U2427/O (AOI12X1AS7)                             0.17     27.24 f
+  U2471/O (OAI12X1AS7)                             0.36     27.59 r
+  U2482/O (AOI12X1AS7)                             0.22     27.81 f
+  U2490/O (OAI12X1AS7)                             0.37     28.18 r
+  ctmTdsLR_1_635/O (OAI12B2X1AS7)                  0.27     28.46 r
+  U2613/CO (FAX1AS7)                               0.35     28.81 r
+  U2619/CO (FAX1AS7)                               0.30     29.11 r
+  U297/O (NAND2X1AS7)                              0.70     29.81 f
+  U2510/O (OAI12X1AS7)                             0.63     30.44 r
+  U2511/O (CLKINVX1AS7)                            0.21     30.65 f
+  U2525/O (OAI12X1AS7)                             0.35     31.01 r
+  U2529/O (AOI12X1AS7)                             0.16     31.17 f
+  ctmTdsLR_2_469/O (OAI112X1AS7)                   0.39     31.56 r
+  U2574/O (AOI12X1AS7)                             0.22     31.78 f
+  U2584/O (OAI12X1AS7)                             0.36     32.14 r
+  U2593/O (AOI12X1AS7)                             0.21     32.35 f
+  U2602/O (OAI12X1AS7)                             0.40     32.75 r
+  U2611/O (AOI12X1AS7)                             0.23     32.98 f
+  U2618/O (OAI12X1AS7)                             0.41     33.39 r
+  U2736/CO (FAX1AS7)                               0.32     33.71 r
+  U308/O (NAND2X1AS7)                              0.74     34.45 f
+  U2635/O (OAI12X1AS7)                             0.70     35.16 r
+  U2636/O (CLKINVX1AS7)                            0.14     35.30 f
+  U2637/O (OAI12X1AS7)                             0.33     35.63 r
+  U2641/O (AOI12X1AS7)                             0.17     35.80 f
+  ctmTdsLR_2_573/O (OAI112X1AS7)                   0.41     36.20 r
+  U2685/O (AOI12X1AS7)                             0.23     36.43 f
+  U2693/O (OAI12X1AS7)                             0.37     36.80 r
+  U2703/O (AOI12X1AS7)                             0.21     37.02 f
+  U2711/O (OAI12X1AS7)                             0.39     37.41 r
+  U2721/O (AOI12X1AS7)                             0.24     37.65 f
+  U2729/O (OAI12X1AS7)                             0.33     37.98 r
+  U2863/CO (FAX1AS7)                               0.38     38.36 r
+  U2873/CO (FAX1AS7)                               0.29     38.66 r
+  U2738/O (CLKINVX1AS7)                            0.10     38.75 f
+  U311/O (NOR2X1AS7)                               0.99     39.74 r
+  U2739/O (CLKINVX1AS7)                            0.26     40.00 f
+  U2740/O (CLKINVX1AS7)                            0.64     40.64 r
+  ctmTdsLR_1_715/OB (MUX2BX1AS7)                   0.35     40.99 f
+  U2744/O (CLKINVX1AS7)                            0.21     41.20 r
+  U2761/O (NAND2X1AS7)                             0.17     41.37 f
+  U2763/O (OAI12X1AS7)                             0.27     41.63 r
+  U2764/O (AOI12X1AS7)                             0.12     41.75 f
+  ctmTdsLR_2_942/O (OAI112X1AS7)                   0.40     42.16 r
+  U2799/O (AOI12X1AS7)                             0.23     42.38 f
+  U2808/O (OAI12X1AS7)                             0.36     42.74 r
+  U2817/O (AOI12X1AS7)                             0.22     42.96 f
+  U2826/O (OAI12X1AS7)                             0.38     43.34 r
+  U2835/O (AOI12X1AS7)                             0.22     43.56 f
+  U2844/O (OAI12X1AS7)                             0.40     43.96 r
+  U2853/O (AOI12X1AS7)                             0.24     44.20 f
+  U2862/O (OAI12X1AS7)                             0.43     44.63 r
+  ctmTdsLR_1_886/O (OAI12B2X1AS7)                  0.28     44.91 r
+  U2951/CO (FAX1AS7)                               0.33     45.24 r
+  U2875/O (CLKINVX1AS7)                            0.11     45.35 f
+  U312/O (NOR2X1AS7)                               1.28     46.62 r
+  U2929/O (AOI12X1AS7)                             0.14     46.77 f
+  U2931/O (OAI112X1AS7)                            0.26     47.02 r
+  U3075/O (NAND2B1X1AS7)                           0.18     47.21 r
+  Result_reg_3_/D (DFFRBQX1AS7)                    0.00     47.21 r
+  data arrival time                                         47.21
+
+  clock core_clock (rise edge)                    50.00     50.00
+  clock network delay (propagated)                 1.28     51.28
+  Result_reg_3_/CK (DFFRBQX1AS7)                   0.00     51.28 r
+  library setup time                              -0.13     51.16
+  data required time                                        51.16
+  ------------------------------------------------------------------------
+  data required time                                        51.16
+  data arrival time                                        -47.21
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.95
+
+
+
+  Startpoint: B_reg_reg_13_ (rising edge-triggered flip-flop clocked by core_clock)
+  Endpoint: Result_reg_7_ (rising edge-triggered flip-flop clocked by core_clock)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: core_clock
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 1.08      1.08
+
+  B_reg_reg_13_/CK (DFFRBQX2AS7)                   0.00      1.08 r
+  B_reg_reg_13_/Q (DFFRBQX2AS7)                    0.49      1.57 f
+  HFSINV_1202_13/O (CLKINVX2AS7)                   0.22      1.79 r
+  HFSBUF_115_11/O (BUFX3AS7)                       0.30      2.09 r
+  U1205/O (NAND2X2AS7)                             0.11      2.20 f
+  U1206/O (NOR2X2AS7)                              0.34      2.54 r
+  U1207/O (NAND2X2AS7)                             0.13      2.67 f
+  U300/O (NOR2X2AS7)                               0.32      2.99 r
+  U1208/O (NAND2X2AS7)                             0.15      3.14 f
+  ctmTdsLR_2_305/O (CLKINVX2AS7)                   0.12      3.26 r
+  ctmTdsLR_1_304/O (NAND3B1X2AS7)                  0.16      3.42 f
+  U302/O (NOR2X2AS7)                               0.27      3.69 r
+  U1210/O (NAND2X2AS7)                             0.13      3.82 f
+  U1211/O (NOR2X2AS7)                              0.23      4.05 r
+  U1212/O (NAND2X2AS7)                             0.16      4.21 f
+  ctmTdsLR_3_303/O (INVX1AS7)                      0.16      4.37 r
+  ctmTdsLR_1_301/O (NAND2B1X2AS7)                  0.13      4.49 f
+  U1216/O (OAI12X2AS7)                             0.23      4.72 r
+  U1220/O (OAI12X1AS7)                             0.16      4.89 f
+  U1225/O (OAI112X2AS7)                            0.26      5.15 r
+  ctmTdsLR_1_819/O (OAI12B2X4AS7)                  0.15      5.30 f
+  U1232/O (OAI12X1AS7)                             0.24      5.54 r
+  U1238/O (AOI12X1AS7)                             0.21      5.75 f
+  U1239/O (NAND2X1AS7)                             0.24      5.99 r
+  U1240/O (NAND2X1AS7)                             0.14      6.13 f
+  U1243/O (NAND2X1AS7)                             0.15      6.28 r
+  U1253/O (NAND4X2AS7)                             0.26      6.54 f
+  U1259/O (NOR2X2AS7)                              0.25      6.78 r
+  U1260/O (XOR2X1AS7)                              0.38      7.17 f
+  ctmTdsLR_1_686/O (OAI12B2X1AS7)                  0.12      7.28 r
+  ctmTdsLR_1_778/O (OAI12B2X1AS7)                  0.17      7.46 f
+  U1267/O (NAND2X1AS7)                             0.13      7.58 r
+  U1268/O (NAND2B1X1AS7)                           0.11      7.70 f
+  ctmTdsLR_1_300/O (OAI12B2X2AS7)                  0.21      7.91 r
+  U287/O (OAI12X4AS7)                              0.15      8.06 f
+  U1284/O (INVX2AS7)                               0.26      8.32 r
+  U1285/O (NAND2X4AS7)                             0.11      8.43 f
+  U1288/O (NAND3X1AS7)                             0.21      8.64 r
+  U1295/O (AOI12X2AS7)                             0.14      8.78 f
+  U1299/O (OAI12X2AS7)                             0.19      8.96 r
+  U1307/O (NAND2X2AS7)                             0.12      9.08 f
+  ctmTdsLR_1_687/O (OAI22B2X2AS7)                  0.27      9.35 r
+  ctmTdsLR_2_821/O (AOI12B2X1AS7)                  0.67     10.02 r
+  U1982/O (NAND2X1AS7)                             0.17     10.20 f
+  U1986/O (OAI12X1AS7)                             0.44     10.64 r
+  U1987/O (NOR2X1AS7)                              0.10     10.74 f
+  U1994/O (OAI12X1AS7)                             0.34     11.08 r
+  U1998/O (AOI12X1AS7)                             0.20     11.27 f
+  ctmTdsLR_1_478/O (OAI13X1AS7)                    0.34     11.61 r
+  U2010/O (NAND2X1AS7)                             0.48     12.10 f
+  U2027/O (OAI12X1AS7)                             0.49     12.59 r
+  U2028/O (CLKINVX1AS7)                            0.18     12.77 f
+  U2029/O (OAI12X1AS7)                             0.42     13.19 r
+  U2033/O (AOI12X1AS7)                             0.15     13.34 f
+  U2070/O (OAI12X1AS7)                             0.27     13.61 r
+  U2071/O (NAND2X1AS7)                             0.53     14.14 f
+  U2087/O (OAI12X1AS7)                             0.51     14.65 r
+  U2088/O (CLKINVX1AS7)                            0.20     14.84 f
+  U2089/O (OAI12X1AS7)                             0.45     15.29 r
+  U2093/O (AOI12X1AS7)                             0.16     15.45 f
+  U2138/O (OAI12X1AS7)                             0.39     15.84 r
+  ctmTdsLR_1_854/O (AOI12X1AS7)                    0.15     15.99 f
+  ctmTdsLR_1_902/O (CLKINVX1AS7)                   0.14     16.13 r
+  ctmTdsLR_2_903/O (OAI112X2AS7)                   0.49     16.62 f
+  U2158/O (OAI12X1AS7)                             0.51     17.13 r
+  U2159/O (CLKINVX1AS7)                            0.19     17.32 f
+  U2160/O (OAI12X1AS7)                             0.44     17.76 r
+  U2164/O (AOI12X1AS7)                             0.16     17.93 f
+  U2209/O (OAI12X1AS7)                             0.39     18.32 r
+  ctmTdsLR_2_784/O (OAI12B2X1AS7)                  0.23     18.55 r
+  U2223/O (NAND2X1AS7)                             0.55     19.10 f
+  U2239/O (OAI12X1AS7)                             0.54     19.63 r
+  U2240/O (CLKINVX1AS7)                            0.21     19.84 f
+  U2241/O (OAI12X1AS7)                             0.41     20.25 r
+  U2245/O (AOI12X1AS7)                             0.18     20.43 f
+  U2288/O (OAI12X1AS7)                             0.31     20.74 r
+  ctmTdsLR_2_619/O (NAND3B1X1AS7)                  0.15     20.90 f
+  ctmTdsLR_3_620/O (OAI112X1AS7)                   0.22     21.12 r
+  U2404/CO (FAX1AS7)                               0.33     21.45 r
+  U296/O (NAND2X1AS7)                              0.66     22.11 f
+  U2311/O (OAI12X1AS7)                             0.64     22.75 r
+  U2312/O (CLKINVX1AS7)                            0.20     22.96 f
+  U2325/O (OAI12X1AS7)                             0.34     23.29 r
+  U2329/O (AOI12X1AS7)                             0.21     23.50 f
+  U2370/O (OAI12X1AS7)                             0.37     23.87 r
+  U2381/O (AOI12X1AS7)                             0.21     24.08 f
+  U2391/O (OAI12X1AS7)                             0.43     24.52 r
+  ctmTdsLR_1_627/O (OAI12B2X1AS7)                  0.28     24.80 r
+  U2507/CO (FAX1AS7)                               0.29     25.09 r
+  U2406/O (NAND2X1AS7)                             0.70     25.79 f
+  U2421/O (OAI12X1AS7)                             0.69     26.48 r
+  U2422/O (CLKINVX1AS7)                            0.20     26.68 f
+  U2423/O (OAI12X1AS7)                             0.38     27.06 r
+  U2427/O (AOI12X1AS7)                             0.17     27.24 f
+  U2471/O (OAI12X1AS7)                             0.36     27.59 r
+  U2482/O (AOI12X1AS7)                             0.22     27.81 f
+  U2490/O (OAI12X1AS7)                             0.37     28.18 r
+  ctmTdsLR_1_635/O (OAI12B2X1AS7)                  0.27     28.46 r
+  U2613/CO (FAX1AS7)                               0.35     28.81 r
+  U2619/CO (FAX1AS7)                               0.30     29.11 r
+  U297/O (NAND2X1AS7)                              0.70     29.81 f
+  U2510/O (OAI12X1AS7)                             0.63     30.44 r
+  U2511/O (CLKINVX1AS7)                            0.21     30.65 f
+  U2525/O (OAI12X1AS7)                             0.35     31.01 r
+  U2529/O (AOI12X1AS7)                             0.16     31.17 f
+  ctmTdsLR_2_469/O (OAI112X1AS7)                   0.39     31.56 r
+  U2574/O (AOI12X1AS7)                             0.22     31.78 f
+  U2584/O (OAI12X1AS7)                             0.36     32.14 r
+  U2593/O (AOI12X1AS7)                             0.21     32.35 f
+  U2602/O (OAI12X1AS7)                             0.40     32.75 r
+  U2611/O (AOI12X1AS7)                             0.23     32.98 f
+  U2618/O (OAI12X1AS7)                             0.41     33.39 r
+  U2736/CO (FAX1AS7)                               0.32     33.71 r
+  U308/O (NAND2X1AS7)                              0.74     34.45 f
+  U2635/O (OAI12X1AS7)                             0.70     35.16 r
+  U2636/O (CLKINVX1AS7)                            0.14     35.30 f
+  U2637/O (OAI12X1AS7)                             0.33     35.63 r
+  U2641/O (AOI12X1AS7)                             0.17     35.80 f
+  ctmTdsLR_2_573/O (OAI112X1AS7)                   0.41     36.20 r
+  U2685/O (AOI12X1AS7)                             0.23     36.43 f
+  U2693/O (OAI12X1AS7)                             0.37     36.80 r
+  U2703/O (AOI12X1AS7)                             0.21     37.02 f
+  U2711/O (OAI12X1AS7)                             0.39     37.41 r
+  U2721/O (AOI12X1AS7)                             0.24     37.65 f
+  U2729/O (OAI12X1AS7)                             0.33     37.98 r
+  U2863/CO (FAX1AS7)                               0.38     38.36 r
+  U2873/CO (FAX1AS7)                               0.29     38.66 r
+  U2738/O (CLKINVX1AS7)                            0.10     38.75 f
+  U311/O (NOR2X1AS7)                               0.99     39.74 r
+  U2739/O (CLKINVX1AS7)                            0.26     40.00 f
+  U2740/O (CLKINVX1AS7)                            0.64     40.64 r
+  ctmTdsLR_1_715/OB (MUX2BX1AS7)                   0.35     40.99 f
+  U2744/O (CLKINVX1AS7)                            0.21     41.20 r
+  U2761/O (NAND2X1AS7)                             0.17     41.37 f
+  U2763/O (OAI12X1AS7)                             0.27     41.63 r
+  U2764/O (AOI12X1AS7)                             0.12     41.75 f
+  ctmTdsLR_2_942/O (OAI112X1AS7)                   0.40     42.16 r
+  U2799/O (AOI12X1AS7)                             0.23     42.38 f
+  U2808/O (OAI12X1AS7)                             0.36     42.74 r
+  U2817/O (AOI12X1AS7)                             0.22     42.96 f
+  U2826/O (OAI12X1AS7)                             0.38     43.34 r
+  U2835/O (AOI12X1AS7)                             0.22     43.56 f
+  U2844/O (OAI12X1AS7)                             0.40     43.96 r
+  U2853/O (AOI12X1AS7)                             0.24     44.20 f
+  U2862/O (OAI12X1AS7)                             0.43     44.63 r
+  ctmTdsLR_1_886/O (OAI12B2X1AS7)                  0.28     44.91 r
+  U2951/CO (FAX1AS7)                               0.33     45.24 r
+  U2875/O (CLKINVX1AS7)                            0.11     45.35 f
+  U312/O (NOR2X1AS7)                               1.28     46.62 r
+  U3063/O (AOI12X1AS7)                             0.13     46.75 f
+  U3064/O (OAI12X1AS7)                             0.30     47.06 r
+  U3083/O (NAND2B1X1AS7)                           0.19     47.25 r
+  Result_reg_7_/D (DFFRBQX1AS7)                    0.00     47.25 r
+  data arrival time                                         47.25
+
+  clock core_clock (rise edge)                    50.00     50.00
+  clock network delay (propagated)                 1.34     51.34
+  Result_reg_7_/CK (DFFRBQX1AS7)                   0.00     51.34 r
+  library setup time                              -0.14     51.21
+  data required time                                        51.21
+  ------------------------------------------------------------------------
+  data required time                                        51.21
+  data arrival time                                        -47.25
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.96
+
+
+1

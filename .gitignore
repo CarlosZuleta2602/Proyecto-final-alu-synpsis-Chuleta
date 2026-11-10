@@ -1,0 +1,43 @@
+# Bibliotecas de tecnología y celdas con licencia
+pdk/
+ndm/
+icc2/
+*.ndm
+*.nlib/
+*.db
+*.lib
+*.lef
+*.tf
+*.TLUplus
+*.map
+
+# Bases de datos y productos generados por herramientas
+work/
+*.daidir/
+simv*
+*.ddc
+*.fsdb
+*.wdb
+*.jou
+*.log
+*.str
+*.gds
+*.gdsii
+*.oas
+*.oasis
+*.idf
+*.tar.gz
+
+# Archivos locales de Vivado
+*.xpr
+*.cache/
+*.runs/
+*.sim/
+*.hw/
+*.ip_user_files/
+.Xil/
+
+# Temporales
+__pycache__/
+.DS_Store
+Thumbs.db

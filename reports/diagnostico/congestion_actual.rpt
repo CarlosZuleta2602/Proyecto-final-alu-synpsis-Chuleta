@@ -1,0 +1,15 @@
+****************************************
+Report : congestion
+Design : alu_plus_sync
+Version: Y-2026.03-SP2
+Date   : Mon Nov  9 15:27:36 2026
+****************************************
+
+Layer     |    overflow     |              # GRCs has
+Name      |  total  |  max  | overflow (%)      | max overflow
+---------------------------------------------------------------
+Both Dirs |     150 |     3 |     130  ( 0.64%) |       2
+H routing |      54 |     3 |      47  ( 0.46%) |       2
+V routing |      96 |     2 |      83  ( 0.81%) |      13
+
+1

@@ -1,0 +1,19 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : alu_plus_sync
+Version: X-2025.06-SP5-5
+Date   : Mon Nov  9 12:38:05 2026
+****************************************
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   alu_plus_sync                0.00        6355.92       -6355.92  (VIOLATED)
+
+
+1

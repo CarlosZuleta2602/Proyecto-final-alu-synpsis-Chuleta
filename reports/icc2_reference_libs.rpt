@@ -1,0 +1,13 @@
+****************************************
+Report : Reference Library Report
+Library: ALU_Plus_GF150.nlib
+Version: Y-2026.03-SP2
+Date   : Mon Nov  9 12:47:58 2026
+****************************************
+
+    Name             Path                                                     Location
+    ----------------------------------------------------------------------------------
+*+  M31LLSC733_GF150 <ROOT_LOCAL>/ndm/M31LLSC733_GF150.ndm <ROOT_LOCAL>/ndm/M31LLSC733_GF150.ndm
+    "*" = Library currently open
+    "+" = Library has technology information
+1

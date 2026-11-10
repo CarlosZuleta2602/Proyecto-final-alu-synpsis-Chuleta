@@ -1,0 +1,341 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 10
+        -report_by design
+Design : alu_plus_sync
+Version: Y-2026.03-SP2
+Date   : Mon Nov  9 13:04:00 2026
+****************************************
+
+  Startpoint: ALUControl_reg_reg_1_ (rising edge-triggered flip-flop clocked by core_clock)
+  Endpoint: C_reg (rising edge-triggered flip-flop clocked by core_clock)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: core_clock
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 0.92      0.92
+
+  ALUControl_reg_reg_1_/CK (DFFSBQX1AS7)           0.00      0.92 r
+  ALUControl_reg_reg_1_/Q (DFFSBQX1AS7)            0.35      1.27 f
+  U438/O (CLKINVX1AS7)                             0.18      1.46 r
+  U1201/O (NOR3X1AS7)                              0.10      1.56 f
+  C_reg/D (DFFRBQX1AS7)                            0.00      1.56 f
+  data arrival time                                          1.56
+
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 1.25      1.25
+  C_reg/CK (DFFRBQX1AS7)                           0.00      1.25 r
+  library hold time                               -0.27      0.98
+  data required time                                         0.98
+  ------------------------------------------------------------------------
+  data required time                                         0.98
+  data arrival time                                         -1.56
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.58
+
+
+
+  Startpoint: A_reg_reg_7_ (rising edge-triggered flip-flop clocked by core_clock)
+  Endpoint: Result_reg_7_ (rising edge-triggered flip-flop clocked by core_clock)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: core_clock
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 0.92      0.92
+
+  A_reg_reg_7_/CK (DFFRBQX2AS7)                    0.00      0.92 r
+  A_reg_reg_7_/Q (DFFRBQX2AS7)                     0.71      1.63 r
+  U3082/O (OAI12X1AS7)                             0.21      1.84 f
+  U3083/O (NAND2B1X1AS7)                           0.17      2.00 r
+  Result_reg_7_/D (DFFRBQX1AS7)                    0.00      2.00 r
+  data arrival time                                          2.00
+
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 1.34      1.34
+  Result_reg_7_/CK (DFFRBQX1AS7)                   0.00      1.34 r
+  library hold time                               -0.07      1.28
+  data required time                                         1.28
+  ------------------------------------------------------------------------
+  data required time                                         1.28
+  data arrival time                                         -2.00
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.73
+
+
+
+  Startpoint: A_reg_reg_13_ (rising edge-triggered flip-flop clocked by core_clock)
+  Endpoint: Result_reg_13_ (rising edge-triggered flip-flop clocked by core_clock)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: core_clock
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 0.89      0.89
+
+  A_reg_reg_13_/CK (DFFRBQX2AS7)                   0.00      0.89 r
+  A_reg_reg_13_/Q (DFFRBQX2AS7)                    0.75      1.64 r
+  U3094/O (OAI12X1AS7)                             0.25      1.88 f
+  U3095/O (NAND2B1X1AS7)                           0.16      2.04 r
+  Result_reg_13_/D (DFFRBQX1AS7)                   0.00      2.04 r
+  data arrival time                                          2.04
+
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 1.34      1.34
+  Result_reg_13_/CK (DFFRBQX1AS7)                  0.00      1.34 r
+  library hold time                               -0.07      1.27
+  data required time                                         1.27
+  ------------------------------------------------------------------------
+  data required time                                         1.27
+  data arrival time                                         -2.04
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.77
+
+
+
+  Startpoint: B_reg_reg_2_ (rising edge-triggered flip-flop clocked by core_clock)
+  Endpoint: Result_reg_2_ (rising edge-triggered flip-flop clocked by core_clock)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: core_clock
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 0.92      0.92
+
+  B_reg_reg_2_/CK (DFFRBQX4AS7)                    0.00      0.92 r
+  B_reg_reg_2_/Q (DFFRBQX4AS7)                     0.87      1.79 r
+  U3072/O (OAI12X1AS7)                             0.12      1.91 f
+  U3073/O (NAND2B1X1AS7)                           0.15      2.06 r
+  Result_reg_2_/D (DFFRBQX1AS7)                    0.00      2.06 r
+  data arrival time                                          2.06
+
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 1.34      1.34
+  Result_reg_2_/CK (DFFRBQX1AS7)                   0.00      1.34 r
+  library hold time                               -0.07      1.27
+  data required time                                         1.27
+  ------------------------------------------------------------------------
+  data required time                                         1.27
+  data arrival time                                         -2.06
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.79
+
+
+
+  Startpoint: B_reg_reg_0_ (rising edge-triggered flip-flop clocked by core_clock)
+  Endpoint: Result_reg_0_ (rising edge-triggered flip-flop clocked by core_clock)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: core_clock
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 0.89      0.89
+
+  B_reg_reg_0_/CK (DFFRBQX2AS7)                    0.00      0.89 r
+  B_reg_reg_0_/Q (DFFRBQX2AS7)                     0.59      1.48 f
+  U2885/O (AOI12X1AS7)                             0.25      1.72 r
+  U2886/O (OAI13X1AS7)                             0.15      1.88 f
+  U2887/O (OAI112X1AS7)                            0.19      2.07 r
+  Result_reg_0_/D (DFFRBQX1AS7)                    0.00      2.07 r
+  data arrival time                                          2.07
+
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 1.28      1.28
+  Result_reg_0_/CK (DFFRBQX1AS7)                   0.00      1.28 r
+  library hold time                               -0.03      1.25
+  data required time                                         1.25
+  ------------------------------------------------------------------------
+  data required time                                         1.25
+  data arrival time                                         -2.07
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.81
+
+
+
+  Startpoint: B_reg_reg_6_ (rising edge-triggered flip-flop clocked by core_clock)
+  Endpoint: Result_reg_6_ (rising edge-triggered flip-flop clocked by core_clock)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: core_clock
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 0.92      0.92
+
+  B_reg_reg_6_/CK (DFFRBQX4AS7)                    0.00      0.92 r
+  B_reg_reg_6_/Q (DFFRBQX4AS7)                     0.83      1.75 r
+  U3080/O (OAI12X1AS7)                             0.20      1.95 f
+  U3081/O (NAND2B1X1AS7)                           0.14      2.09 r
+  Result_reg_6_/D (DFFRBQX1AS7)                    0.00      2.09 r
+  data arrival time                                          2.09
+
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 1.34      1.34
+  Result_reg_6_/CK (DFFRBQX1AS7)                   0.00      1.34 r
+  library hold time                               -0.07      1.27
+  data required time                                         1.27
+  ------------------------------------------------------------------------
+  data required time                                         1.27
+  data arrival time                                         -2.09
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.82
+
+
+
+  Startpoint: B_reg_reg_0_ (rising edge-triggered flip-flop clocked by core_clock)
+  Endpoint: ProductFull_reg_1_ (rising edge-triggered flip-flop clocked by core_clock)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: core_clock
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 0.89      0.89
+
+  B_reg_reg_0_/CK (DFFRBQX2AS7)                    0.00      0.89 r
+  B_reg_reg_0_/Q (DFFRBQX2AS7)                     0.59      1.48 f
+  U2892/O (AOI12X1AS7)                             0.24      1.71 r
+  U2893/O (AOI12X1AS7)                             0.13      1.84 f
+  ProductFull_reg_1_/D (DFFRBQX1AS7)               0.00      1.84 f
+  data arrival time                                          1.84
+
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 1.24      1.24
+  ProductFull_reg_1_/CK (DFFRBQX1AS7)              0.00      1.24 r
+  library hold time                               -0.27      0.97
+  data required time                                         0.97
+  ------------------------------------------------------------------------
+  data required time                                         0.97
+  data arrival time                                         -1.84
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.87
+
+
+
+  Startpoint: B_reg_reg_12_ (rising edge-triggered flip-flop clocked by core_clock)
+  Endpoint: Result_reg_12_ (rising edge-triggered flip-flop clocked by core_clock)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: core_clock
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 0.89      0.89
+
+  B_reg_reg_12_/CK (DFFRBQX2AS7)                   0.00      0.89 r
+  B_reg_reg_12_/Q (DFFRBQX2AS7)                    0.80      1.68 r
+  U3092/O (OAI12X1AS7)                             0.25      1.94 f
+  U3093/O (NAND2B1X1AS7)                           0.17      2.10 r
+  Result_reg_12_/D (DFFRBQX1AS7)                   0.00      2.10 r
+  data arrival time                                          2.10
+
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 1.28      1.28
+  Result_reg_12_/CK (DFFRBQX1AS7)                  0.00      1.28 r
+  library hold time                               -0.06      1.22
+  data required time                                         1.22
+  ------------------------------------------------------------------------
+  data required time                                         1.22
+  data arrival time                                         -2.10
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.88
+
+
+
+  Startpoint: B_reg_reg_0_ (rising edge-triggered flip-flop clocked by core_clock)
+  Endpoint: ProductFull_reg_0_ (rising edge-triggered flip-flop clocked by core_clock)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: core_clock
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 0.89      0.89
+
+  B_reg_reg_0_/CK (DFFRBQX2AS7)                    0.00      0.89 r
+  B_reg_reg_0_/Q (DFFRBQX2AS7)                     0.59      1.48 f
+  U324/O (AND2X1AS7)                               0.36      1.83 f
+  ProductFull_reg_0_/D (DFFRBQX1AS7)               0.00      1.83 f
+  data arrival time                                          1.83
+
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 1.20      1.20
+  ProductFull_reg_0_/CK (DFFRBQX1AS7)              0.00      1.20 r
+  library hold time                               -0.26      0.94
+  data required time                                         0.94
+  ------------------------------------------------------------------------
+  data required time                                         0.94
+  data arrival time                                         -1.83
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.89
+
+
+
+  Startpoint: B_reg_reg_3_ (rising edge-triggered flip-flop clocked by core_clock)
+  Endpoint: Result_reg_3_ (rising edge-triggered flip-flop clocked by core_clock)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: core_clock
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 0.89      0.89
+
+  B_reg_reg_3_/CK (DFFRBQX4AS7)                    0.00      0.89 r
+  B_reg_reg_3_/Q (DFFRBQX4AS7)                     0.93      1.81 r
+  U3074/O (OAI12X1AS7)                             0.16      1.98 f
+  U3075/O (NAND2B1X1AS7)                           0.15      2.13 r
+  Result_reg_3_/D (DFFRBQX1AS7)                    0.00      2.13 r
+  data arrival time                                          2.13
+
+  clock core_clock (rise edge)                     0.00      0.00
+  clock network delay (propagated)                 1.28      1.28
+  Result_reg_3_/CK (DFFRBQX1AS7)                   0.00      1.28 r
+  library hold time                               -0.06      1.22
+  data required time                                         1.22
+  ------------------------------------------------------------------------
+  data required time                                         1.22
+  data arrival time                                         -2.13
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.91
+
+
+1

@@ -1,0 +1,893 @@
+****************************************
+Report : congestion
+Design : alu_plus_sync
+Version: Y-2026.03-SP2
+Date   : Mon Nov  9 15:25:17 2026
+****************************************
+
+Layer     |    overflow     |              # GRCs has
+Name      |  total  |  max  | overflow (%)      | max overflow
+---------------------------------------------------------------
+Both Dirs |     150 |     3 |     130  ( 0.64%) |       2
+H routing |      54 |     3 |      47  ( 0.46%) |       2
+V routing |      96 |     2 |      83  ( 0.81%) |      13
+
+
+Cells in Congested Regions
+
+Design              Cell                          Reference       Overflow
+--------------------------------------------------------------------------
+alu_plus_sync_drc_repair
+                    ALUControl_reg_reg_2_         DFFSBQX1AS7            1
+alu_plus_sync_drc_repair
+                    B_reg_reg_4_                  DFFRBQX1AS7            1
+alu_plus_sync_drc_repair
+                    HFSBUF_13139_242              CLKBUFX4AS7            1
+alu_plus_sync_drc_repair
+                    HFSBUF_3014_50                CLKBUFX2AS7            1
+alu_plus_sync_drc_repair
+                    HFSBUF_611_92                 CLKBUFX1AS7            1
+alu_plus_sync_drc_repair
+                    HFSINV_11611_234              CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    HFSINV_1202_13                CLKINVX4AS7            1
+alu_plus_sync_drc_repair
+                    HFSINV_3708_184               CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    HFSINV_4385_67                CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    HFSINV_6100_138               CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    HFSINV_6712_140               CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    ProductFull_reg_16_           DFFRBQX1AS7            3
+alu_plus_sync_drc_repair
+                    Result_reg_0_                 DFFRBQX1AS7            1
+alu_plus_sync_drc_repair
+                    Result_reg_13_                DFFRBQX1AS7            1
+alu_plus_sync_drc_repair
+                    U1000                         AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U1006                         MUX2BX1AS7             1
+alu_plus_sync_drc_repair
+                    U1007                         OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U1008                         AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U1017                         NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U1022                         MUX2BX1AS7             1
+alu_plus_sync_drc_repair
+                    U1030                         MUX2BX1AS7             1
+alu_plus_sync_drc_repair
+                    U1031                         OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U1032                         AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U1038                         AND2X1AS7              1
+alu_plus_sync_drc_repair
+                    U1039                         AOI22X1AS7             2
+alu_plus_sync_drc_repair
+                    U1040                         OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U1054                         MUX2BX1AS7             1
+alu_plus_sync_drc_repair
+                    U1055                         OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U1058                         OAI13X1AS7             1
+alu_plus_sync_drc_repair
+                    U1059                         MUX2BX1AS7             1
+alu_plus_sync_drc_repair
+                    U1060                         OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U1061                         AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U1062                         OAI22X1AS7             1
+alu_plus_sync_drc_repair
+                    U1063                         AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U1065                         NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U1066                         OAI22X1AS7             1
+alu_plus_sync_drc_repair
+                    U1067                         AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U1071                         AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U1083                         NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U1084                         AOI12X1AS7             2
+alu_plus_sync_drc_repair
+                    U1085                         OAI12X1AS7             2
+alu_plus_sync_drc_repair
+                    U1088                         NOR2X1AS7              2
+alu_plus_sync_drc_repair
+                    U1089                         AOI12X1AS7             2
+alu_plus_sync_drc_repair
+                    U1110                         OAI22X1AS7             1
+alu_plus_sync_drc_repair
+                    U1120                         OAI12X1AS7             2
+alu_plus_sync_drc_repair
+                    U1121                         AOI12X1AS7             2
+alu_plus_sync_drc_repair
+                    U1129                         MUX2BX1AS7             2
+alu_plus_sync_drc_repair
+                    U1137                         AOI12X1AS7             2
+alu_plus_sync_drc_repair
+                    U1140                         OAI22X1AS7             1
+alu_plus_sync_drc_repair
+                    U1144                         MUX2BX1AS7             2
+alu_plus_sync_drc_repair
+                    U1145                         OAI112X1AS7            2
+alu_plus_sync_drc_repair
+                    U1153                         AOI22X1AS7             2
+alu_plus_sync_drc_repair
+                    U1154                         OAI12X1AS7             2
+alu_plus_sync_drc_repair
+                    U1165                         NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U1166                         XOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U1190                         NAND2B1X1AS7           2
+alu_plus_sync_drc_repair
+                    U1191                         AOI12X1AS7             2
+alu_plus_sync_drc_repair
+                    U1198                         CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    U1199                         AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U1200                         AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U1203                         NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U1211                         NOR2X2AS7              1
+alu_plus_sync_drc_repair
+                    U1212                         NAND2X2AS7             1
+alu_plus_sync_drc_repair
+                    U1219                         NAND2X1AS7             2
+alu_plus_sync_drc_repair
+                    U1220                         OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U1239                         NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U1250                         OAI112X1AS7            1
+alu_plus_sync_drc_repair
+                    U1253                         NAND4X2AS7             1
+alu_plus_sync_drc_repair
+                    U1259                         NOR2X2AS7              1
+alu_plus_sync_drc_repair
+                    U1261                         NAND2X1AS7             2
+alu_plus_sync_drc_repair
+                    U1264                         CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    U1281                         CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    U1287                         OR2X1AS7               1
+alu_plus_sync_drc_repair
+                    U1296                         XOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U1315                         CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    U1343                         OR2X1AS7               1
+alu_plus_sync_drc_repair
+                    U1344                         NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U1371                         OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U1739                         AOI12X2AS7             1
+alu_plus_sync_drc_repair
+                    U1807                         NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U1809                         OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U1813                         MUX2X1AS7              1
+alu_plus_sync_drc_repair
+                    U1820                         NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U1822                         MUX2X1AS7              1
+alu_plus_sync_drc_repair
+                    U1878                         NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U1879                         NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U1880                         OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U1949                         FAX1AS7                1
+alu_plus_sync_drc_repair
+                    U1950                         INVX1AS7               1
+alu_plus_sync_drc_repair
+                    U1951                         NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U1952                         OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U1953                         CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    U1969                         NAND3X1AS7             1
+alu_plus_sync_drc_repair
+                    U1970                         NAND3X1AS7             1
+alu_plus_sync_drc_repair
+                    U1983                         NAND3X1AS7             2
+alu_plus_sync_drc_repair
+                    U1984                         NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U2155                         NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U2161                         NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U2179                         CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    U2201                         NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U2208                         AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U2209                         OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U2217                         NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U2236                         NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U2237                         NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U2256                         CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    U2278                         NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U2280                         NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U2285                         NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U2293                         MUX2X1AS7              1
+alu_plus_sync_drc_repair
+                    U2317                         CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    U2332                         OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U2337                         CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    U2338                         NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U2623                         AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U2635                         OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U2657                         NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U2658                         NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U2669                         NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U2671                         OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U2672                         NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U2738                         CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    U2739                         CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    U2773                         CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    U2791                         AOI12X1AS7             2
+alu_plus_sync_drc_repair
+                    U2843                         NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U2844                         OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U2862                         OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U287                          OAI12X2AS7             1
+alu_plus_sync_drc_repair
+                    U2873                         FAX1AS7                1
+alu_plus_sync_drc_repair
+                    U2874                         MUX2X1AS7              1
+alu_plus_sync_drc_repair
+                    U2876                         NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U2885                         AOI12X1AS7             2
+alu_plus_sync_drc_repair
+                    U2886                         OAI13X1AS7             1
+alu_plus_sync_drc_repair
+                    U2900                         INVX1AS7               1
+alu_plus_sync_drc_repair
+                    U2903                         AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U2904                         INVX1AS7               1
+alu_plus_sync_drc_repair
+                    U2914                         NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U2915                         CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    U2916                         NAND3X1AS7             1
+alu_plus_sync_drc_repair
+                    U2919                         NAND2X1AS7             4
+alu_plus_sync_drc_repair
+                    U2920                         OAI112X1AS7            4
+alu_plus_sync_drc_repair
+                    U2929                         AOI12X1AS7             2
+alu_plus_sync_drc_repair
+                    U2930                         NAND2X1AS7             4
+alu_plus_sync_drc_repair
+                    U2931                         OAI112X1AS7            2
+alu_plus_sync_drc_repair
+                    U2949                         OAI112X1AS7            2
+alu_plus_sync_drc_repair
+                    U2950                         AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U2953                         OAI222X1AS7            1
+alu_plus_sync_drc_repair
+                    U2954                         NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U2955                         AOI22X1AS7             1
+alu_plus_sync_drc_repair
+                    U2956                         OAI112X1AS7            2
+alu_plus_sync_drc_repair
+                    U2958                         OAI112X1AS7            1
+alu_plus_sync_drc_repair
+                    U2959                         INVX1AS7               2
+alu_plus_sync_drc_repair
+                    U2977                         AOI112X1AS7            4
+alu_plus_sync_drc_repair
+                    U298                          NOR2X1AS7              2
+alu_plus_sync_drc_repair
+                    U2989                         NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U2995                         NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U2997                         NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U2998                         NAND3X1AS7             1
+alu_plus_sync_drc_repair
+                    U2999                         OAI112X1AS7            1
+alu_plus_sync_drc_repair
+                    U3000                         AOI112X1AS7            1
+alu_plus_sync_drc_repair
+                    U3006                         NAND3X1AS7             1
+alu_plus_sync_drc_repair
+                    U3011                         OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U3016                         CLKINVX1AS7            2
+alu_plus_sync_drc_repair
+                    U3018                         AOI12X1AS7             2
+alu_plus_sync_drc_repair
+                    U3020                         NAND3X1AS7             1
+alu_plus_sync_drc_repair
+                    U3023                         OAI112X1AS7            1
+alu_plus_sync_drc_repair
+                    U3024                         NOR4X1AS7              1
+alu_plus_sync_drc_repair
+                    U3029                         OAI22X1AS7             1
+alu_plus_sync_drc_repair
+                    U3032                         AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U3033                         OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U3042                         AOI112X1AS7            1
+alu_plus_sync_drc_repair
+                    U3060                         OAI22X1AS7             1
+alu_plus_sync_drc_repair
+                    U3074                         OAI12X1AS7             2
+alu_plus_sync_drc_repair
+                    U3077                         NAND2B1X1AS7           1
+alu_plus_sync_drc_repair
+                    U3079                         NAND2B1X1AS7           1
+alu_plus_sync_drc_repair
+                    U3088                         OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U3089                         NAND2B1X1AS7           1
+alu_plus_sync_drc_repair
+                    U3090                         CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    U3093                         NAND2B1X1AS7           1
+alu_plus_sync_drc_repair
+                    U3095                         NAND2B1X1AS7           1
+alu_plus_sync_drc_repair
+                    U311                          NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U3125                         CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    U3126                         OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U3127                         AOI22B2X1AS7           1
+alu_plus_sync_drc_repair
+                    U3130                         AOI22B2X1AS7           1
+alu_plus_sync_drc_repair
+                    U324                          AND2X1AS7              1
+alu_plus_sync_drc_repair
+                    U326                          NAND3X2AS7             1
+alu_plus_sync_drc_repair
+                    U352                          NOR3X1AS7              1
+alu_plus_sync_drc_repair
+                    U355                          XOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U358                          CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    U360                          NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U369                          OAI12X1AS7             2
+alu_plus_sync_drc_repair
+                    U409                          NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U417                          NAND2X1AS7             2
+alu_plus_sync_drc_repair
+                    U429                          XOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U440                          NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U442                          MUX2BX1AS7             1
+alu_plus_sync_drc_repair
+                    U450                          NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U468                          OAI112X1AS7            1
+alu_plus_sync_drc_repair
+                    U470                          AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U477                          AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U485                          CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    U486                          MUX2BX1AS7             1
+alu_plus_sync_drc_repair
+                    U487                          AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U490                          MUX2BX1AS7             1
+alu_plus_sync_drc_repair
+                    U491                          NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U492                          AOI112X1AS7            1
+alu_plus_sync_drc_repair
+                    U493                          INVX1AS7               1
+alu_plus_sync_drc_repair
+                    U497                          AOI112X1AS7            1
+alu_plus_sync_drc_repair
+                    U505                          XOR3X1AS7              1
+alu_plus_sync_drc_repair
+                    U514                          CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    U515                          AOI112X1AS7            1
+alu_plus_sync_drc_repair
+                    U522                          NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U525                          OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U531                          NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U532                          AOI112X1AS7            1
+alu_plus_sync_drc_repair
+                    U549                          AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U586                          NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U587                          NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U588                          AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U593                          NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U599                          NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U600                          CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    U601                          MUX2BX1AS7             1
+alu_plus_sync_drc_repair
+                    U602                          OAI112X1AS7            1
+alu_plus_sync_drc_repair
+                    U607                          MUX2BX1AS7             1
+alu_plus_sync_drc_repair
+                    U608                          NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U609                          AOI112X1AS7            1
+alu_plus_sync_drc_repair
+                    U618                          MUX2X1AS7              1
+alu_plus_sync_drc_repair
+                    U619                          OAI112X1AS7            1
+alu_plus_sync_drc_repair
+                    U621                          MUX2BX1AS7             1
+alu_plus_sync_drc_repair
+                    U622                          NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U623                          AOI112X1AS7            1
+alu_plus_sync_drc_repair
+                    U650                          OAI112X1AS7            2
+alu_plus_sync_drc_repair
+                    U654                          NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U655                          AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U656                          OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U660                          MUX2X1AS7              1
+alu_plus_sync_drc_repair
+                    U670                          AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U673                          MUX2BX1AS7             1
+alu_plus_sync_drc_repair
+                    U674                          OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U675                          AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U677                          NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U681                          MUX2BX1AS7             1
+alu_plus_sync_drc_repair
+                    U685                          OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U693                          AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U694                          OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U695                          AOI12X1AS7             3
+alu_plus_sync_drc_repair
+                    U709                          CLKINVX1AS7            2
+alu_plus_sync_drc_repair
+                    U711                          CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    U714                          AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U716                          MUX2BX1AS7             2
+alu_plus_sync_drc_repair
+                    U728                          NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U730                          NOR2X1AS7              2
+alu_plus_sync_drc_repair
+                    U731                          AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U733                          NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U734                          AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U735                          OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U741                          NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U746                          OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U760                          CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    U761                          NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U771                          CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    U774                          CLKINVX1AS7            3
+alu_plus_sync_drc_repair
+                    U775                          NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U776                          OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U777                          OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U783                          MUX2BX1AS7             3
+alu_plus_sync_drc_repair
+                    U788                          OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U791                          AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U794                          MUX2BX1AS7             1
+alu_plus_sync_drc_repair
+                    U796                          AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U802                          NAND2X1AS7             3
+alu_plus_sync_drc_repair
+                    U803                          AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U813                          MUX2BX1AS7             1
+alu_plus_sync_drc_repair
+                    U815                          AOI112X1AS7            1
+alu_plus_sync_drc_repair
+                    U817                          MUX2BX1AS7             1
+alu_plus_sync_drc_repair
+                    U818                          AOI12X1AS7             3
+alu_plus_sync_drc_repair
+                    U819                          OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U832                          OAI12X1AS7             2
+alu_plus_sync_drc_repair
+                    U833                          AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U852                          CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    U853                          NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U857                          OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U858                          AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U867                          AOI12X1AS7             2
+alu_plus_sync_drc_repair
+                    U872                          AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U875                          NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    U876                          AOI12X1AS7             2
+alu_plus_sync_drc_repair
+                    U884                          NAND3X1AS7             1
+alu_plus_sync_drc_repair
+                    U890                          MUX2BX1AS7             1
+alu_plus_sync_drc_repair
+                    U891                          OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U892                          AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U894                          CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    U895                          OAI22X1AS7             2
+alu_plus_sync_drc_repair
+                    U896                          AOI12X1AS7             2
+alu_plus_sync_drc_repair
+                    U910                          XNOR3X1AS7             1
+alu_plus_sync_drc_repair
+                    U911                          MUX2BX1AS7             2
+alu_plus_sync_drc_repair
+                    U912                          OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U913                          AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U914                          NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U917                          AOI12X1AS7             2
+alu_plus_sync_drc_repair
+                    U918                          NAND2X1AS7             2
+alu_plus_sync_drc_repair
+                    U920                          OAI112X1AS7            2
+alu_plus_sync_drc_repair
+                    U922                          NAND2X1AS7             2
+alu_plus_sync_drc_repair
+                    U923                          NOR2X1AS7              2
+alu_plus_sync_drc_repair
+                    U924                          AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U925                          OAI112X1AS7            2
+alu_plus_sync_drc_repair
+                    U932                          AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U941                          AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U944                          AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U945                          OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U948                          MUX2BX1AS7             1
+alu_plus_sync_drc_repair
+                    U957                          OAI12B2X1AS7           1
+alu_plus_sync_drc_repair
+                    U967                          NAND3X1AS7             2
+alu_plus_sync_drc_repair
+                    U973                          NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    U975                          OAI112X1AS7            1
+alu_plus_sync_drc_repair
+                    U982                          OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U984                          OAI22X1AS7             2
+alu_plus_sync_drc_repair
+                    U988                          INVX1AS7               1
+alu_plus_sync_drc_repair
+                    U989                          AOI22X1AS7             2
+alu_plus_sync_drc_repair
+                    U995                          MUX2BX1AS7             1
+alu_plus_sync_drc_repair
+                    U996                          OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    U997                          AOI12X1AS7             2
+alu_plus_sync_drc_repair
+                    U998                          MUX2BX1AS7             1
+alu_plus_sync_drc_repair
+                    U999                          OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_1130               NAND2B1X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_1133               OAI12X1AS7             2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_1137               AOI12B2X1AS7           2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_1139               AOI22B2X1AS7           2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_1141               AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_1143               OAI23X1AS7             2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_1154               OAI122X1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_1156               OAI12B2X1AS7           2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_1167               OAI112X1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_1190               OAI112X1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_1193               NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_1195               AOI112X1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_1201               OAI122X1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_1202               OAI122X1AS7            2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_1211               OAI112X1AS7            2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_1214               OAI112X1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_1221               AOI112X1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_1224               OAI112X1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_1236               OAI112X1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_1239               OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_1252               OAI112X1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_289                NOR3X1AS7              1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_326                OAI22B2X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_366                NAND2B1X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_380                OAI122X1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_428                OAI22B2X1AS7           2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_435                XOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_508                NAND2B1X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_520                OAI12X1AS7             1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_525                OAI22B2X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_528                OAI22B2X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_575                OAI22B2X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_597                NOR2B1X1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_602                OAI22B2X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_635                OAI12B2X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_646                OAI22B2X1AS7           2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_647                OAI22B2X1AS7           2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_662                NAND2B1X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_663                MUX2BX1AS7             1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_665                OAI22X1AS7             1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_671                OAI22X1AS7             2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_682                NAND2B1X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_686                OAI12B2X1AS7           2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_717                OAI22B2X1AS7           2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_718                OAI22B2X1AS7           2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_752                NAND2X1AS7             2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_758                OAI112X1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_759                AOI22X1AS7             1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_775                NAND2B1X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_778                OAI12B2X2AS7           2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_788                OAI22B2X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_801                AOI222X1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_806                AOI222X1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_811                NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_840                OAI12B2X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_848                OAI23X1AS7             1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_850                CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_887                NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_890                NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_926                NAND2B1X1AS7           4
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_929                OAI222X1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_934                OAI12B2X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_1_936                OAI22B2X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_1115               CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_1117               CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_1138               OAI22B2X1AS7           2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_1142               OAI22X1AS7             1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_1155               CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_1191               NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_1194               CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_1196               NOR2X1AS7              1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_1212               CLKINVX1AS7            2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_1225               CLKINVX1AS7            2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_1235               CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_1237               CLKINVX1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_434                OAI22B2X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_486                OAI22B2X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_521                AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_601                OAI22B2X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_603                NAND2B1X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_649                NAND2B1X1AS7           2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_666                AOI122X1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_672                AOI122X1AS7            2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_731                OAI12X1AS7             2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_734                OAI12X1AS7             2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_750                AOI22X1AS7             1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_756                AOI22X1AS7             1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_760                OAI12B2X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_765                OAI12B2X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_771                OAI12B2X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_790                OAI22B2X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_797                OAI22B2X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_799                OAI222X1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_807                OAI12B2X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_812                OAI22B2X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_821                AOI12B2X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_849                AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_891                OAI12X1AS7             3
+alu_plus_sync_drc_repair
+                    ctmTdsLR_2_932                OAI122X1AS7            2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_3_1192               CLKINVX1AS7            2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_3_1213               NAND2X1AS7             2
+alu_plus_sync_drc_repair
+                    ctmTdsLR_3_1226               NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_3_1238               NAND2X1AS7             1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_3_748                OAI12B2X1AS7           1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_3_754                OAI112X1AS7            1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_3_810                AOI12X1AS7             1
+alu_plus_sync_drc_repair
+                    ctmTdsLR_3_813                AOI12X1AS7             3
+alu_plus_sync_drc_repair
+                    intadd_10_U5                  FAX1AS7                1
+alu_plus_sync_drc_repair
+                    intadd_5_U5                   FAX1AS7                1
+
+1
